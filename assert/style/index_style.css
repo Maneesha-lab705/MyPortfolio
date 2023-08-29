@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+    font-style: oblique;
+    color: white;
+}
+
+#heder>div{
+    width: 100vw;
+    height: 50px;
+    background-color: #34D4B9;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgb(27, 215, 21) 0px 4px 6px -1px, rgb(7, 12, 87)
+    0px 1px 0px inset;
+    z-index: 9999;
+}
+#heder>div>nav>a{
+    position: relative;
+    top:15px;
+    font-style: normal;
+}
+#heder>div>nav>a:first-child{
+    position: relative;
+    left: 70vw;
+}
+#heder>div>nav>a:nth-child(2){
+    position: relative;
+    left: 72vw;
+}
+#heder>div>nav>a:nth-child(3){
+    position: relative;
+    left: 74vw;
+}
+#heder>div>nav>a:nth-child(4){
+    position: relative;
+    left: 76vw;
+}
+.hi{
+    width: fit-content;
+    position: relative;
+    left: 60vw;
+    bottom: 40vw;
+    font-style: normal;
+    font-size: 50px;
+}
+.im{
+    width: fit-content;
+    position: relative;
+    left: 50vw;
+    bottom: 45vw;
+    font-style: normal;
+    font-size: 50px;
+    /*animation-name: my-animation;*/
+    /*animation-duration: 1s;*/
+    /*animation-direction:  alternate;*/
+    /*animation-iteration-count: 20;*/
+    /*animation-timing-function:ease-in-out;*/
+}
+/*@keyframes my-animation {*/
+/*    from{*/
+/*        background-color: hotpink;*/
+/*        margin-left: 0px;*/
+
+/*    }*/
+/*    to{*/
+/*        background-color: red;*/
+/*        border-radius: 100%;*/
+/*        margin-left: 100%;*/
+/*    }*/
+
+/*}*/
+.am{
+    position: relative;
+    width: fit-content;
+    left: 60vw;
+    bottom: 43vw;
+    font-style: normal;
+    font-size: 50px;
+}
+header>img{
+width: 100vw;
+}
