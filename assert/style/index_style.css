@@ -2,81 +2,152 @@ body{
     background-color: black;
     font-style: oblique;
     color: white;
-}
 
-#heder>div{
-    width: 100vw;
+}
+header{
+    position: absolute;
+}
+header>div{
+    width: calc(100vw - 20px);
     height: 50px;
-    background-color: #34D4B9;
+    background-color: black;
     position: sticky;
     top: 0;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgb(27, 215, 21) 0px 4px 6px -1px, rgb(7, 12, 87)
-    0px 1px 0px inset;
+    box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
     z-index: 9999;
 }
-#heder>div>nav>a{
+header>div>nav>a{
     position: relative;
     top:15px;
-    font-style: normal;
+    left: calc(100vw - 400px);
+    font-size:15px;
+    font-style: oblique;
+    margin-left: 20px;
+    color: white;
 }
-#heder>div>nav>a:first-child{
-    position: relative;
-    left: 70vw;
-}
-#heder>div>nav>a:nth-child(2){
-    position: relative;
-    left: 72vw;
-}
-#heder>div>nav>a:nth-child(3){
-    position: relative;
-    left: 74vw;
-}
-#heder>div>nav>a:nth-child(4){
-    position: relative;
-    left: 76vw;
-}
-.hi{
-    width: fit-content;
-    position: relative;
-    left: 60vw;
-    bottom: 40vw;
-    font-style: normal;
-    font-size: 50px;
-}
-.im{
-    width: fit-content;
-    position: relative;
-    left: 50vw;
-    bottom: 45vw;
-    font-style: normal;
-    font-size: 50px;
-    /*animation-name: my-animation;*/
-    /*animation-duration: 1s;*/
-    /*animation-direction:  alternate;*/
-    /*animation-iteration-count: 20;*/
-    /*animation-timing-function:ease-in-out;*/
-}
-/*@keyframes my-animation {*/
-/*    from{*/
-/*        background-color: hotpink;*/
-/*        margin-left: 0px;*/
 
-/*    }*/
-/*    to{*/
-/*        background-color: red;*/
-/*        border-radius: 100%;*/
-/*        margin-left: 100%;*/
-/*    }*/
-
-/*}*/
-.am{
+section{
     position: relative;
-    width: fit-content;
-    left: 60vw;
-    bottom: 43vw;
-    font-style: normal;
-    font-size: 50px;
+    width: calc(100vw - 20px);
 }
-header>img{
-width: 100vw;
+section>div{
+    position: relative;
+    width: calc(100vw - 20px);
+}
+section>div>img{
+    position: relative;
+    width: calc(100vw - 20px);
+}
+.image{
+    position: sticky;
+    top: 0;
+}
+section>div>h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+}
+section>div>h2{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: calc(100vw - 90vw);
+    font-size: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+section>div>h1{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: calc(100vw - 90vw);
+    font-size: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+main>section>div>nav:hover{
+    background-color: red;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+
+}
+.m{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+}
+section>div>nav{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+footer{
+    position: absolute;
+    color: white;
+    top:280vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+footer>div{
+    position: absolute;
+    background-color: rgb(34, 205, 22);
+    box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
+    width: 100%;
+    height: 200px;
+}
+div{
+    position: absolute;
+}
+footer>div>h1 {
+    position: relative;
+    color: white;
+    /*left: calc(100vw - 57vw);*/
+    top: 0;
+    left:0;
+    right: 50px;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+
+}
+footer>div>nav{
+    width: fit-content;
+    position: absolute;
+     right: 0;
+    bottom: 20px;
+}
+footer>div>h3{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*left: 0;*/
+}
+.call{
+    position: absolute;
+    bottom: 20px;
 }
