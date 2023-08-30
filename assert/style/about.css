@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+header>div>img{
+    position: absolute;
+    width: 1528px;
+    height: 400px;
+    top: 0;
+    left: 0;
+}
+header>div>a{
+    width: fit-content;
+    position: absolute;
+    top: 0  ;
+    left: calc(100vw - 100vw);
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+}
+.h3{
+    position: relative;
+    width: 60px;
+    top:calc(100vw - 97vw)  ;
+    left: calc(100vw - 99vw);
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+    color: red;
+}
+.h{
+    position: relative;
+    width: fit-content;
+    top:39px  ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+    color: red;
+    font-size: 60px;
+}
+.h1{
+    position: relative;
+    width: fit-content;
+    top:39px  ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+    color: red;
+}
+main{
+    position: absolute;
+}
+main>article{
+    position: absolute;
+    width: 40vw;
+    left: 20px;
+}
+main>article>h2{
+    position: relative;
+    width: fit-content;
+    top:calc(100vw - 85vw)  ;
+    z-index: 9999;
+}
+main>article>h3{
+    background :transparent;
+    position: relative;
+    width: fit-content;
+    top:calc(100vw - 85vw)  ;
+    z-index: 9999;
+    color: whitesmoke;
+
+}
+main>u{
+    left: 20px;
+    width: fit-content;
+    position: relative;
+    top: calc(100vw - 50vw);
+
+}
+.forecast {
+    position: absolute;
+    top: calc(100vw - 46vw);
+    left: 20px;
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+    color: black;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat  white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+.day-forecast > h2,
+.day-forecast > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+}
