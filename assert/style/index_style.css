@@ -51,7 +51,7 @@ section>div>h3{
     margin: auto;
     width: fit-content;
     height: fit-content;
-    font-size: 30px;
+    font-size: 70px;
 }
 section>div>h2{
     position: absolute;
@@ -59,7 +59,7 @@ section>div>h2{
     height: fit-content;
     top: calc(100vw - 90vw);
     font-size: 10px;
-    left: 0;
+    left: 60px;
     right: 0;
     bottom: 0;
     margin: auto;
@@ -85,14 +85,14 @@ main>section>div>nav:hover{
 }
 .m{
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 0;
+    left: 40vw;
     right: 0;
     bottom: 0;
-    margin: auto;
+    /*margin: auto;*/
     width: fit-content;
     height: fit-content;
-    font-size: 30px;
+    font-size: 70px;
 }
 section>div>nav{
     position: absolute;
