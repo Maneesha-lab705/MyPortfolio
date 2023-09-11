@@ -1,5 +1,5 @@
 body{
-    background:#59ABE3;margin:0
+    background:#101010  ;margin:0
 }
 
 .form{
@@ -7,7 +7,7 @@ body{
     height:440px;
     background:#e6e6e6;
     border-radius:8px;
-    box-shadow:0 0 40px -10px #000;
+    box-shadow:0 0 40px -10px rgb(243, 230, 230);
     margin:calc(50vh - 220px) auto;
     padding:20px 30px;max-width:calc(100vw - 40px);
     box-sizing:border-box;font-family:'Montserrat',sans-serif;
