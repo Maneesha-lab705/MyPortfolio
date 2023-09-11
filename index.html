@@ -12,8 +12,31 @@
     <link rel="stylesheet" href="assert/style/normalize.css">
 </head>
 <body>
-
-<header id="heder" >
+<div class="header">
+    <div class="header__logo">
+        <strong>LOGO</strong>
+    </div>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><i data-feather="home"></i><span>Home</span> </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><i data-feather="About"></i><span>About</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><i data-feather="Project"></i><span>project</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><i data-feather="Gallery"></i><span>Gallery</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><i data-feather="Contact"></i><span>Contact</span></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--<header id="heder" >-->
     <div class="hed">
         <nav class="nav">
             <a href="about.html"><span>ABOUT</span></a>
@@ -23,13 +46,21 @@
         </nav>
     </div>
 
-<main>
-    <section>
-        <div>
-            <img class="profile" src="assert/img/HI (1).png" alt="PROFILE PHOTO">
+    <section class="profileframe">
+        <div class="profileImage">
+            <img class="profile" src="assert/img/profil.png" alt="PROFILE PHOTO">
 <!--            <h3>MANEESHA,</h3>-->
-            <h3 class="m"> MANEESHA DILSHAN</h3>
-            <h2>FONT END DEVELOPER-BACK END DEVELOPER</h2>
+<!--            <h3 class="m"> MANEESHA DILSHAN</h3>-->
+<!--            <h2>FONT END DEVELOPER-BACK END DEVELOPER</h2>-->
+
+            <h1>This is purely: <div class="roller">
+    <span id="rolltext">HTML<br/>
+    CSS<br/>
+    Curiosity<br/>
+    <span id="spare-time">too much spare time?</span><br/>
+            </div>
+            </h1>
+
         </div>
         <div>
             <img src="assert/img/MY%20PROJECT%20(2).png" alt="about">
@@ -61,8 +92,7 @@
         </div>
     </section>
 
-</main>
-</header >
+<!--</header >-->
     <footer>
         <div>
             <h1>STAY IN TUCH</h1>
