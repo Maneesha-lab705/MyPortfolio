@@ -46,10 +46,7 @@ section>div>img{
     position: relative;
     width: calc(100vw - 20px);
 }
-.image{
-    position: sticky;
-    top: 0;
-}
+
 section>div>h3{
     position: absolute;
     top: 0;
@@ -137,8 +134,10 @@ section>div>nav{
     width: fit-content;
     height: fit-content;
 }
+
 section>div>img{
     position: sticky;
+    padding: 2px;
 }
 .profileImage{
     position: relative;
@@ -219,7 +218,10 @@ body {
     background-position: center;
     font-family: "Open Sans", sans-serif;
 }
-
+.logo{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
 .header {
     position: sticky;
     top: 0;
@@ -228,7 +230,7 @@ body {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 0 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+    /*box-shadow: rgb(254, 254, 254) 0px 3px 6px, rgb(254, 254, 254)0px 3px 6px;*/
     height: 6rem;
     display: flex;
     align-items: center;
@@ -265,9 +267,14 @@ body {
 }
 .navbar__link svg {
     transition: 500ms ease all;
+
 }
 .navbar__link:hover svg {
     stroke: #c4151c;
+}
+span{
+    color: red;
+    font-style: normal;
 }
 .navbar:not(:hover) .navbar__link:focus span, .navbar__link:hover span {
     opacity: 1;
