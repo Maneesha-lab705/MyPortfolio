@@ -70,6 +70,7 @@ main{
 }
 main>article{
     position: absolute;
+    top: 20px;
     width: 40vw;
     left: 20px;
 }
@@ -89,23 +90,25 @@ main>article>h3{
 
 }
 main>u{
-    left: 20px;
-    width: fit-content;
     position: relative;
-    top: calc(100vw - 50vw);
+    left: 45vw;
+    width: fit-content;
+    top:20vw;
 
 }
 article.day-forecast:hover{
     transform: scale(1.5);
 }
 .forecast {
-    position: absolute;
-    top: calc(100vw - 46vw);
-    left: 20px;
+    position: relative;
+    top: 20vw;
+    left: 45vw;
     margin: 0;
     padding: 0.3rem;
     background-color: #eee;
     color: black;
+    border-bottom: solid 2px #01FE09;
+    border-top: solid 2px #FE0101;
 }
 
 .forecast > h1,
@@ -130,9 +133,9 @@ article.day-forecast:hover{
     font-size: 1rem;
 }
 footer{
-    position: absolute;
+    position: relative;
     color: white;
-    top:1500px;
+    top:75vw;
     left: 0;
     right: 0;
     bottom: 0;
@@ -154,7 +157,7 @@ div{
 footer>div>h1 {
     position: relative;
     color: white;
-    top: 0;
+    top: 5vw;
     left:0;
     right: 50px;
     bottom: 0;
@@ -181,14 +184,14 @@ footer>div>h3{
 main>a>button{
     position: relative;
     /*top: 50vw;*/
-    width: 300px;
+    width: 150px;
     height: 40px;
     color: black;
     background-color: #eeeeee;
     border-radius: 15px ;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    top: 70vw;
-    left: 20px;
+    top: 21vw;
+    left: 70vw;
 }
 main>a>button:hover {
     box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;

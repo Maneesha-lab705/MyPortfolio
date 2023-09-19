@@ -198,6 +198,10 @@ footer>div>h3{
     bottom: 0;
     /*left: 0;*/
 }
+footer{
+    position: relative;
+    top: 0;
+}
 .call{
     position: absolute;
     bottom: 20px;
@@ -244,10 +248,12 @@ body {
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
+
 }
 .navbar__menu {
     position: relative;
     display: flex;
+
 }
 .navbar__link {
     position: relative;
@@ -264,6 +270,7 @@ body {
     width: 10rem;
     text-transform: uppercase;
     transition: 500ms ease all;
+
 }
 .navbar__link svg {
     transition: 500ms ease all;
@@ -595,4 +602,26 @@ h1{
             top: -6.375rem;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styling for elements here */
+    body {
+        /* Example: Change background color for the body */
+        background-color: lightgray;
+    }
+
+    /* You can target other elements similarly */
+    .header {
+        /* Example: Change header font size */
+        font-size: 16px;
+    }
+
+    .navbar__menu {
+        /* Example: Change navigation menu styles */
+        background-color: #333;
+        padding: 10px;
+    }
+
+    /* Continue to adjust styles for other elements as needed */
 }
