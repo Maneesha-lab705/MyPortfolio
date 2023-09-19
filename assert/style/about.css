@@ -133,9 +133,9 @@ article.day-forecast:hover{
     font-size: 1rem;
 }
 footer{
-    position: relative;
+    position: absolute;
     color: white;
-    top:75vw;
+    top:100vw;
     left: 0;
     right: 0;
     bottom: 0;
