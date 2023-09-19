@@ -42,11 +42,25 @@ section>div{
     position: relative;
     width: calc(100vw - 20px);
 }
-section>div>img{
+section>div>.image{
     position: relative;
+    top: 50px;
     width: calc(100vw - 20px);
+    -webkit-filter: blur(3px);
+    /*filter: blur(3px);*/
+    /*-webkit-transition: .3s ease-in-out;*/
+    /*transition: .3s ease-in-out;*/
+    margin-left: 30px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
-
+section>div>.image:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    margin-left: 0;
+}
 section>div>h3{
     position: absolute;
     top: 0;
@@ -81,13 +95,13 @@ section>div>h1{
     bottom: 0;
     margin: auto;
 }
-main>section>div>nav:hover{
-    background-color: red;
-    width: 50px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
+/*section>div>nav:hover{*/
+/*    background-color: red;*/
+/*    width: 50px;*/
+/*    aspect-ratio: 1/1;*/
+/*    border-radius: 100%;*/
 
-}
+/*}*/
 .m{
     position: absolute;
     width: fit-content;
@@ -135,12 +149,11 @@ section>div>nav{
     height: fit-content;
 }
 
-section>div>img{
-    position: sticky;
-    padding: 2px;
-}
+
 .profileImage{
     position: relative;
+    height: 400px;
+
 }
 .circle{
     position: relative;
@@ -170,9 +183,13 @@ footer>div{
     background: linear-gradient(to bottom, black, rgb(25,25,112));
     color: black;
 }
-div{
-    position: absolute;
-}
+/*div{*/
+/*    position: absolute;*/
+/*}*/
+/*.name{*/
+/*    position:absolute;*/
+/*    bottom: 20vw;*/
+/*}*/
 footer>div>h1 {
     position: relative;
     color: white;
@@ -206,15 +223,15 @@ footer{
     position: absolute;
     bottom: 20px;
 }
-.circle{
-    position: relative;
-    width:100px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-  background-color: red;
+/*.circle{*/
+/*    position: relative;*/
+/*    width:100px;*/
+/*    aspect-ratio: 1/1;*/
+/*    border-radius: 100%;*/
+/*  background-color: red;*/
 
 
-}
+/*}*/
 /*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");*/
 body {
     /*background: #000 url(https://unsplash.it/1600/1000/?random);*/
