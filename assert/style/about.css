@@ -44,10 +44,10 @@ header>div{
     color: red;
 }
 .h{
-    position: relative;
+    position: absolute;
     width: fit-content;
     height: fit-content;
-    top:70px  ;
+    top:55px  ;
     left: calc(50vw - 180px);
     bottom: 0;
     margin: 0;
@@ -56,9 +56,9 @@ header>div{
     font-size: 60px;
 }
 .h1{
-    position: relative;
+    position: absolute;
     width: fit-content;
-    top:60px  ;
+    top:110px  ;
     left: calc(50vw - 80px);
     bottom: 0;
     margin: 0;
@@ -102,7 +102,7 @@ article.day-forecast:hover{
 .forecast {
     position: relative;
     top: 20vw;
-    left: 45vw;
+    left: 43vw;
     margin: 0;
     padding: 0.3rem;
     background-color: #eee;
@@ -135,7 +135,7 @@ article.day-forecast:hover{
 footer{
     position: absolute;
     color: white;
-    top:100vw;
+    top:1050px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -195,4 +195,143 @@ main>a>button{
 }
 main>a>button:hover {
     box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
+}
+
+@media all and (max-width:1440px) {
+    header>div>img{
+        width: 100%;
+    }
+    main>u{
+        left: 800px;
+        top:220px;
+    }
+    .forecast {
+        top: 250px;
+        left: 800px;
+        }
+
+    footer{
+        top:1000px;
+    }
+}
+@media all and (max-width:1024px) {
+    header>div>img{
+        width: 100%;
+    }
+    main>article{
+        top: 50px;
+    }
+    main>u{
+        left: 550px;
+        top:200px;
+    }
+    .forecast {
+        top: 200px;
+        left: 550px;
+    }
+
+    footer{
+        top:1050px;
+    }
+}
+@media all and (max-width:768px) {
+    main>article{
+        top: 100px;
+    }
+    main>article>h2{
+        font-size: 20px;
+    }
+    main>article>h3{
+        font-size: 15px;
+    }
+    main>u{
+        left: 400px;
+        top:200px;
+    }
+    .forecast {
+        top: 200px;
+        left: 400px;
+    }
+    main>a>button{
+        top: 220px;
+    }
+    footer{
+        top:1000px;
+    }
+}
+@media all and (max-width:425px) {
+    .h{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        font-size: 40px;
+    }
+    header>div>img{
+        height: 250px;
+    }
+    main>article{
+        top: 0;
+    }
+    main>article{
+        width: 72%;
+        font-size: 15px;
+    }
+    main>u{
+        left: 30px;
+        top:620px;
+    }
+    .forecast {
+        top: 620px;
+        left: 30px;
+    }
+    main>a>button{
+        top: 640px;
+        left: 100px;
+    }
+    footer{
+        top:1400px;
+    }
+    footer>div>h1 {
+        top: 50px;
+        font-size: 20px
+    }
+    footer>div>nav>a>img{
+        width: 30px;
+    }
+}
+@media all and (max-width:375px) {
+    main>u{
+        left: 30px;
+        top:700px;
+    }
+    .forecast {
+        top: 700px;
+        left: 30px;
+    }
+    main>a>button{
+        top: 720px;
+        left: 80px;
+    }
+    footer{
+        top:1530px;
+    }
+}
+@media all and (max-width:375px) {
+    main>u{
+        left: 30px;
+        top:750px;
+    }
+    .forecast {
+        top: 750px;
+        left: 30px;
+    }
+    main>a>button{
+        top: 770px;
+        left: 80px;
+    }
+    footer{
+        top:1630px;
+    }
 }
