@@ -554,14 +554,14 @@ footer>div>h3{
 
 @media all and (max-width:1440px) {
     .hero>img{
-        height: 600px;
+        height: 500px;
     }
 }
 
 /*///////Tab size///*/
 @media all and (max-width : 768px) {
     span{
-        color: red;
+        color: white;
     }
    .navbar{
        width: 760px;
@@ -588,13 +588,45 @@ footer>div>h3{
 
 @media all and (max-width:425px) {
     .logo{
-        display: none;
+        position: relative;
+        left: 0;
+        width: 15px;
+        aspect-ratio: 1/1;
+    }
+    .navbar__menu{
+       position: relative;
+        /*top: 0;*/
+        right: 10vw;
+
     }
     .header {
         gap: 0;
     }
     .navbar__link {
-        width: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        width: 10rem;
+        color: #fff;
+        text-decoration: none;
+        width: 1px;
+        text-transform: uppercase;
+        transition: 500ms ease all;
+    }
+
+    .navbar__item{
+        position: relative;
+        right:10vw;
+        width: 3px;
+    }
+    .navbar__item span{
+        color: #01FE09;
+        font-size: 8px;
+
     }
 
     .hero{
@@ -694,6 +726,30 @@ footer>div>h3{
     }
     .contact>h1{
         font-size: 40px;
+    }
+    .navbar__item{
+        position: relative;
+       right: 18vw;
+    }
+    .logo{
+        position: relative;
+        display: none;
+        left: 0;
+        width: 12px;
+        aspect-ratio: 1/1;
+    }
+    .navbar__menu{
+        position: relative;
+        /*top: 0;*/
+        width: 1px;
+        left: 0;
+
+
+    }
+    .navbar__item span{
+        color: #01FE09;
+        font-size: 6px;
+
     }
 
 }
