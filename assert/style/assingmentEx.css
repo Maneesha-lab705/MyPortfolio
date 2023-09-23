@@ -1,0 +1,360 @@
+body{
+    background: black;
+    color: white;
+}
+main{
+    position: relative;
+    /*border: #018A8A 2px solid;*/
+    top: 50px;
+}
+
+main>h1{
+    position: absolute;
+    /*top: 10px;*/
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 40px;
+    width: fit-content;
+}
+
+.assignment{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: calc(100vw - 100px);
+    height: 350px;
+    /*border: #018A8A solid 2px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.cart{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    border: #018A8A solid 1px;
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
+    margin-bottom: 100px;
+}
+main h1{
+    position: absolute;
+    left: 55vw;
+}
+
+.cart1{
+
+}
+.cart2{
+
+}
+.cart3{
+
+
+}
+.cart4{
+
+}
+.cart5{
+position: absolute;
+left:0.5vw;
+}
+.cart6{
+    position: absolute;
+left: 1vw;
+}
+.assignment_img {
+    width: 140px;
+    height: 120px;
+    position: relative;
+}
+.text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 210px;
+    margin: auto;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 25px;
+}
+.button{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    border-radius: 20px;
+
+}
+.button button{
+    width: 150px;
+    height: 30px;
+    /*border-radius: 10%;*/
+    background:  #229091;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.button button:hover{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:20vw;
+    }
+}
+
+button {
+    font-family: system-ui, sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;
+    border: none;
+}
+/*.assignment_img img:hover{*/
+/*    clip-path: circle(0.0% at 50% 50%);*/
+/*}*/
+
+.assignment_img:hover figcaption{
+    --_i: 0%;
+}
+.assignment_img:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+@media all and (max-width: 1440px){
+    .cart5{
+        position: relative;
+        right: 12vw;
+    }
+    .cart6{
+        position: relative;
+        right: 35vw;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .cart{
+        position: relative;
+        left: 2vw;
+       margin: 30px;
+    }
+/*.cart4{*/
+/*    position: relative;*/
+/*    left: 0.5vw;*/
+/*}*/
+    .cart5{
+        position: absolute;
+        top: 75vw;
+        left: 7vw;
+        /*right: 15vw;*/
+    }
+    .cart6{
+        position: relative;
+        left: 25vw;
+    }
+}
+
+@media all and (max-width:768px) {
+    .cart{
+
+    }
+    .assignment{
+        /*background-color: #01FE09;*/
+        left: 0;
+        width: 760px;
+    }
+    .cart1{
+        position: absolute;
+        right:40vw;
+    }
+    .cart2{
+        position: absolute;
+        left: 50vw;
+    }
+    .cart3{
+        position: absolute;
+        top: 50vw;
+
+    }
+    .cart4{
+        position: absolute;
+        top: 50vw;
+        left: 50vw;
+    }
+    .cart5{
+        position: absolute;
+        top:95vw ;
+       left: 2vw;
+    }
+    .cart6{
+        position: absolute;
+        top: 95vw;
+        left: 50vw;
+    }
+}
+@media all and (max-width:425px) {
+    main h1{
+        position: absolute;
+        left: 55vw;
+    }
+    .cart{
+        position: absolute;
+        top: 0;
+        width: 250px;
+    }
+    .assignment{
+        /*background-color: #01FE09;*/
+        left: 0;
+        width: 760px;
+    }
+    .assignment_img  img{
+        width: 250px;
+        /*height: px;*/
+        position: relative;
+    }
+    .cart1{
+        position: absolute;
+        left:15vw;
+    }
+    .cart2{
+        position: absolute;
+        left: 90vw;
+    }
+    .cart3{
+        position: absolute;
+        top: 80vw;
+        left: 15vw;
+
+    }
+    .cart4{
+        position: absolute;
+        top: 80vw;
+        left: 90vw;
+    }
+    .cart5{
+        position: absolute;
+        top:160vw ;
+        left: 15vw;
+    }
+    .cart6{
+        position: absolute;
+        top: 160vw;
+        left: 90vw;
+    }
+}
+
+@media all and (max-width:375px) {
+    main h1{
+        position: absolute;
+        left: 55vw;
+    }
+    .cart{
+        position: absolute;
+        top: 0;
+        width: 200px;
+        left: 15vw;
+    }
+    .assignment{
+        /*background-color: #01FE09;*/
+        left: 0;
+        width: 760px;
+    }
+    .assignment_img  img{
+        width: 200px;
+        /*height: px;*/
+        position: relative;
+    }
+    .cart1{
+        position: absolute;
+        left:20vw;
+    }
+    .cart2{
+        position: absolute;
+        left: 110vw;
+    }
+    .cart3{
+        position: absolute;
+        top: 90vw;
+        left: 20vw;
+
+    }
+    .cart4{
+        position: absolute;
+        top: 90vw;
+        left: 110vw;
+    }
+    .cart5{
+        position: absolute;
+        top:180vw ;
+        left: 20vw;
+    }
+    .cart6{
+        position: absolute;
+        top: 180vw;
+        left: 110vw;
+    }
+}
+
+@media all and (max-width:320px) {
+    main h1{
+        position: absolute;
+        left: 55vw;
+    }
+    .cart{
+        position: absolute;
+        top: 0;
+        width: 200px;
+        left: 15vw;
+    }
+    .assignment{
+        /*background-color: #01FE09;*/
+        left: 0;
+        width: 760px;
+    }
+    .assignment_img  img{
+        width: 200px;
+        /*height: px;*/
+        position: relative;
+    }
+    .cart1{
+        position: absolute;
+        left:20vw;
+    }
+    .cart2{
+        position: absolute;
+        left: 110vw;
+    }
+    .cart3{
+        position: absolute;
+        top: 90vw;
+        left: 20vw;
+
+    }
+    .cart4{
+        position: absolute;
+        top: 90vw;
+        left: 110vw;
+    }
+    .cart5{
+        position: absolute;
+        top:180vw ;
+        left: 20vw;
+    }
+    .cart6{
+        position: absolute;
+        top: 180vw;
+        left: 110vw;
+    }
+}

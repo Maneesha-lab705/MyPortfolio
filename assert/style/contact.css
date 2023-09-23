@@ -47,7 +47,7 @@ button{float:right;
     margin:8px 0 0;
     font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
-    background:0;
+    background:black;
     color:#5a5a6e;
     cursor:pointer;
     transition:all .3s
@@ -73,4 +73,35 @@ div{
 }
 span{
     margin:0 5px 0 15px
+}
+
+
+@media all and (max-width:1440px) {
+    .form{
+        width: 400px;
+        height: 450px;
+    }
+}
+@media all and (max-width:1024px) {
+
+}
+
+@media all and (max-width:768px) {
+
+}
+
+
+@media all and (max-width:425px) {
+    .form {
+        width: 300px;
+        height: 450px;
+    }
+}
+@media all and (max-width:375px) {
+    .form{
+        width: 290px;
+    }
+}
+@media all and (max-width:320px) {
+
 }
