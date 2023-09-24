@@ -4,6 +4,13 @@ body{
     width: 100%;
     margin: 0;
 }
+/*.about{*/
+/*    width: 500px;*/
+/*    height: 350px;*/
+/*    border-radius: 100%;*/
+/*    position: relative;*/
+/*    left: 50vw;*/
+/*}*/
 header{
     position: relative;
     width: 100%;
@@ -145,7 +152,7 @@ footer{
 footer>div{
     position: absolute;
     background-color: rgb(34, 205, 22);
-    box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
+    box-shadow: red 0px -50px 36px -28px inset;
     width: 100%;
     height: 200px;
     background: linear-gradient(to bottom, black, rgb(25,25,112));
@@ -183,19 +190,88 @@ footer>div>h3{
 }
 main>a>button{
     position: relative;
-    /*top: 50vw;*/
-    width: 150px;
+    width: 50px;
     height: 40px;
     color: black;
     background-color: #eeeeee;
     border-radius: 15px ;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    top: 21vw;
+    /*top: 10vw;*/
     left: 70vw;
+    bottom: 4vw;
 }
 main>a>button:hover {
     box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
 }
+
+
+/*/////////////////////////////////////////*/
+
+.range {
+    position: relative;
+    top: 30vw;
+    left: 60vw;
+    background-color: #333;
+    width: 300px;
+    height: 30px;
+    transform: skew(30deg);
+    font-family: 'Orbitron', monospace;
+}
+.range:before {
+     --width: calc(var(--p) * 1%);
+
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 0;
+     height: 100%;
+     background-color: red;
+     z-index: 0;
+     animation: load .5s forwards linear, glitch 2s infinite linear;
+ }
+
+.range:after {
+     counter-reset: progress var(--p);
+     content: counter(progress) '%';
+     color: #000;
+     position: absolute;
+     left: 5%;
+     top: 50%;
+     transform: translateY(-50%) skewX(-30deg);
+     z-index: 1;
+ }
+
+.range__label {
+     transform: skew(-30deg) translateY(-100%);
+     line-height: 1.5;
+ }
+
+
+@keyframes load {
+    to {
+        width: var(--width);
+    }
+}
+
+@keyframes glitch {
+    0%, 5% {
+        transform: translate(0, 0);
+    }
+    1% {
+        transform: translate(-5%, -10%);
+    }
+    2% {
+        transform: translate(10%, 30%);
+    }
+    3%{
+        transform: translate(-43%, 10%);
+    }
+    4% {
+        transform: translate(2%, -23%);
+    }
+}
+
 
 @media all and (max-width:1440px) {
     /*.forecast{*/
@@ -224,14 +300,13 @@ main>a>button:hover {
         }
     main>a>button{
         position: relative;
-        /*top: 50vw;*/
         width: 150px;
         height: 40px;
         color: black;
         background-color: #eeeeee;
         border-radius: 15px ;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        top: 25vw;
+        top: 35vw;
         left: 81vw;
 
     }
