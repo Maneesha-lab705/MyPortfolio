@@ -2,6 +2,12 @@ body{
     background: black;
     color: white;
 }
+header{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    left: 50vw;
+}
 main{
     position: relative;
     /*border: #018A8A 2px solid;*/
@@ -43,7 +49,7 @@ main>h1{
 }
 main h1{
     position: absolute;
-    left: 55vw;
+    left: 10vw;
 }
 
 .cart1{
@@ -61,11 +67,13 @@ main h1{
 }
 .cart5{
 position: absolute;
-left:0.5vw;
+    top: 25vw;
+    left:3vw;
 }
 .cart6{
     position: absolute;
-left: 1vw;
+    top: 25vw;
+    left: 26.5vw;
 }
 .assignment_img {
     width: 140px;
@@ -134,21 +142,33 @@ button {
 
 
 @media all and (max-width: 1440px){
+    .assignment{
+        display: flex;
+        position: absolute;
+        left: 10vw;
+    }
     .cart5{
-        position: relative;
-        right: 12vw;
+        position: absolute;
+        top: 30vw;
+        left: 1vw;
     }
     .cart6{
-        position: relative;
-        right: 35vw;
+        position: absolute;
+        top: 30vw;
+        left:25vw;
     }
 }
 
 @media all and (max-width: 1024px) {
+    .assignment{
+        position: absolute;
+        left: 4vw;
+    }
     .cart{
         position: relative;
         left: 2vw;
        margin: 30px;
+        display: flex;
     }
 /*.cart4{*/
 /*    position: relative;*/
@@ -161,8 +181,9 @@ button {
         /*right: 15vw;*/
     }
     .cart6{
-        position: relative;
-        left: 25vw;
+        position: absolute;
+        top: 75vw;
+        left: 52vw;
     }
 }
 
@@ -338,23 +359,23 @@ button {
     }
     .cart3{
         position: absolute;
-        top: 90vw;
+        top: 100vw;
         left: 20vw;
 
     }
     .cart4{
         position: absolute;
-        top: 90vw;
+        top: 100vw;
         left: 110vw;
     }
     .cart5{
         position: absolute;
-        top:180vw ;
+        top:200vw ;
         left: 20vw;
     }
     .cart6{
         position: absolute;
-        top: 180vw;
+        top: 200vw;
         left: 110vw;
     }
 }

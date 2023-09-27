@@ -20,7 +20,7 @@ header{
 }
 header>div>img{
     position: absolute;
-    width: calc(100vw - 30px);
+    width: 100vw;
     height: 400px;
     top: 0;
     left: 0;
@@ -86,6 +86,7 @@ main>article>h2{
     width: fit-content;
     top:calc(100vw - 85vw)  ;
     z-index: 9999;
+    font-size: 50px;
 }
 main>article>h3{
     background :transparent;
@@ -94,7 +95,12 @@ main>article>h3{
     top:calc(100vw - 85vw)  ;
     z-index: 9999;
     color: whitesmoke;
+    font-size: 30px;
 
+}
+main>article{
+    position: absolute;
+    width: 50vw;
 }
 main>u{
     position: relative;
@@ -102,6 +108,11 @@ main>u{
     width: fit-content;
     top:20vw;
 
+}
+main>button{
+    position: absolute;
+    top: 20vw;
+    left: 0;
 }
 article.day-forecast:hover{
     transform: scale(1.5);
@@ -142,7 +153,7 @@ article.day-forecast:hover{
 footer{
     position: absolute;
     color: white;
-    top:1050px;
+    top:80vw;
     left: 0;
     right: 0;
     bottom: 0;
@@ -190,19 +201,24 @@ footer>div>h3{
 }
 main>a>button{
     position: relative;
-    width: 50px;
+    width: 200px;
     height: 40px;
     color: black;
     background-color: #eeeeee;
     border-radius: 15px ;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    /*top: 10vw;*/
+    top: 35vw;
     left: 70vw;
     bottom: 4vw;
 }
 main>a>button:hover {
     box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
 }
+.box{
+    position: relative;
+    right: 0;
+}
+
 
 
 /*/////////////////////////////////////////*/
@@ -212,8 +228,8 @@ main>a>button:hover {
     top: 30vw;
     left: 60vw;
     background-color: #333;
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 40px;
     transform: skew(30deg);
     font-family: 'Orbitron', monospace;
 }
@@ -286,9 +302,14 @@ main>a>button:hover {
     /*    border-top: solid 2px #FE0101;*/
 
     /*}*/
+    .range{
+        width: 400px;
+        height: 60px;
+    }
     header>div>img{
         width: 100%;
     }
+
     main>u{
         left: 700px;
         top:220px;
@@ -307,12 +328,12 @@ main>a>button:hover {
         border-radius: 15px ;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         top: 35vw;
-        left: 81vw;
+        left: 60vw;
 
     }
 
     footer{
-        top:1000px;
+        top:90vw;
     }
 }
 @media all and (max-width:1024px) {
@@ -321,6 +342,14 @@ main>a>button:hover {
     }
     main>article{
         top: 50px;
+        width: 50vw;
+
+    }
+    main>article>h2{
+        font-size: 30px;
+    }
+    main>article>h3{
+        font-size: 20px;
     }
     main>u{
         left: 550px;
@@ -331,8 +360,19 @@ main>a>button:hover {
         left: 550px;
     }
 
+    main>a>button{
+        position: absolute;
+        top: 50vw;
+        left: 60vw;
+    }
     footer{
         top:1050px;
+        left: 0vw;
+        width: 1030px;
+    }
+    .range{
+        width: 300px;
+        height: 20px;
     }
 }
 @media all and (max-width:768px) {
@@ -349,13 +389,22 @@ main>a>button:hover {
         left: 400px;
         top:200px;
     }
+    .box{
+        position: absolute;
+        top: 10vw;
+        left: 20vw;
+    }
+    .range{
+        width: 300px;
+        height: 40px;
+    }
     .forecast {
         top: 200px;
         left: 400px;
     }
     main>a>button{
-      top: 27vw;
-        left: 53vw;
+      top: 80vw;
+        left: 100vw;
     }
     footer{
         top:1000px;
@@ -374,12 +423,25 @@ main>a>button:hover {
         width: 500px;
         height: 250px;
     }
-    main>article{
+  main>article{
+        position: absolute;
+        width: 80vw;
+        height: 700px;
         top: 0;
     }
-    main>article{
-        width: 72%;
-        font-size: 15px;
+  .box{
+      position: relative;
+      top: 110vw;
+
+  }
+  .range{
+      width: 300px;
+      height: 20px;
+      left: 0;
+  }
+    h3{
+        position: absolute;
+        width: 50%;
     }
     main>u{
         left: 30px;
@@ -390,12 +452,13 @@ main>a>button:hover {
         left: 35px;
     }
     main>a>button{
-        top: 640px;
-        left: 40px;
+        position: absolute;
+        top: 200vw;
+        left: 70vw;
     }
     footer{
-        width: 458px;
-        top:1400px;
+        width: 500px;
+        top:270vw;
         left: 0vw;
     }
     footer>div>h1 {
@@ -407,6 +470,12 @@ main>a>button:hover {
     }
 }
 @media all and (max-width:375px) {
+    main>article{
+        position: absolute;
+        width: 100vw;
+        height: 700px;
+        top: 0;
+    }
 
     header>div>a>img{
         position: relative;
@@ -418,6 +487,11 @@ main>a>button:hover {
         top: 40px;
         left: 58vw;
     }
+    .box{
+        position: relative;
+        top: 120vw;
+        alignment: center;
+    }
     .h{
         position: relative;
         top: 40px;
@@ -428,6 +502,9 @@ main>a>button:hover {
         top: 40px;
         left: 45vw;
     }
+    h2{
+        width: 100%;
+    }
     main>u{
         left: 30px;
         top:690px;
@@ -437,11 +514,11 @@ main>a>button:hover {
         left: 30px;
     }
     main>a>button{
-        top: 720px;
-        left: 35px;
+        top:220vw;
+        left: 70vw
     }
     footer{
-        top:1630px;
+        top:300vw;
     }
 }
 @media all and (max-width:320px) {
@@ -458,11 +535,21 @@ main>a>button:hover {
     }
     main>a>button{
         width: 100px;
-        top: 765px;
-        left: 50px;
+        top: 270vw;
+        left: 300px;
+    }
+    main>article{
+        position: absolute;
+        width: 100vw;
+        height: 800px;
+        top: 0;
+    }
+    .box{
+        position: relative;
+        top: 160vw;
     }
     footer{
-        top:1600px;
+        top:350vw
     }
 
 }
