@@ -41,7 +41,7 @@
     gap: 0.6rem;
     align-items: center;
     justify-content: center;
-    height: 3.5rem;
+    height: 4rem;
     width: 10rem;
     color: #fff;
     text-decoration: none;
@@ -278,11 +278,11 @@ span{
 .hero{
     position: relative;
     border: black 2px solid;
-    height: 500px;
+    height: 90vh;
 }
 .hero>img{
     width: calc(100vw - 15px);
-    height: 500px;
+    height: 90vh;
 }
 .name{
     position: absolute;
@@ -344,11 +344,11 @@ h1{
 .about{
     position: relative;
     border: black 2px solid;
-    height: 500px;
+    height: 90vh;
 }
 .about>img{
     width: calc(100vw - 15px);
-    height: 500px;
+    height: 90vh;
     opacity: 1;
     display: block;
     transition: .5s ease;
@@ -417,11 +417,11 @@ h1{
 .project{
     position: relative;
     border: black 2px solid;
-    height: 500px;
+    height: 90vh;
 }
 .project>img{
     width: calc(100vw - 15px);
-    height: 500px;
+    height: 90vh;
     opacity: 1;
     display: block;
     transition: .5s ease;
@@ -450,11 +450,11 @@ h1{
 .gallery{
     position: relative;
     border: black 2px solid;
-    height: 500px;
+    height: 90vh;
 }
 .gallery>img{
     width: calc(100vw - 15px);
-    height: 500px;
+    height: 90vh;
     opacity: 1;
     display: block;
     transition: .5s ease;
@@ -483,11 +483,11 @@ h1{
 .contact{
     position: relative;
     border: black 2px solid;
-    height: 500px;
+    height: 90vh;
 }
 .contact>img{
     width: calc(100vw - 15px);
-    height: 500px;
+    height: 90vh;
     opacity: 1;
     display: block;
     transition: .5s ease;
@@ -552,11 +552,11 @@ footer>div>h3{
     top: 5vw;
 }
 
-@media all and (max-width:1440px) {
-    .hero>img{
-        height: 500px;
-    }
-}
+/*@media all and (max-width:1440px) {*/
+/*    .hero>img{*/
+/*        height: 800px;*/
+/*    }*/
+/*}*/
 
 /*///////Tab size///*/
 @media all and (max-width : 768px) {
