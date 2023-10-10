@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assert/lib/fontawosem/css/all.min.css">
     <script src="assert/lib/fontawosem/js/all.min.js"></script>
     <link rel="stylesheet" href="assert/style/index_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 <div class="header">
@@ -39,9 +42,9 @@
     </nav>
 </div>
 <section class="hero">
-    <img class="profile" src="assert/img/profile2.png" alt="PROFILE PHOTO">
+    <img class="profile" src="assert/img/pro.png" alt="PROFILE PHOTO">
 
-    <h1 class="name">MANEESHA DILSHAN <div class="roller">
+    <h1  class="name" >MANEESHA DILSHAN <div class="roller">
             <span id="rolltext">HTML<br/>
             CSS<br/>
             Curiosity<br/>
@@ -51,17 +54,18 @@
     </h1>
 </section >
 <section class="about">
-    <img  class="image" src="assert/img/MY%20PROJECT%20(2).png" alt="about">
+    <img data-aos="zoom-in" class="image" src="assert/img/MY%20PROJECT%20(2).png" alt="about">
     <nav>
         <div class="myDive">
             <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
         </div>
     </nav>
-    <h1>ABOUT</h1>
+    <h1 data-aos="fade-up"
+        data-aos-duration="3000">ABOUT</h1>
 </section>
 
 <section class="project">
-    <img class="image" src="assert/img/MY%20PROJECT%20(1).png" alt="gallery">
+    <img data-aos="zoom-in" class="image" src="assert/img/MY%20PROJECT%20(1).png" alt="gallery">
     <nav>
         <div class="myDive">
             <a href="project.html"><img class="icon"  src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
@@ -70,7 +74,7 @@
     <h1 class="h1">PROJECT</h1>
 </section>
 
-<section class="gallery">
+<section data-aos="zoom-in" class="gallery">
     <img class="image" src="assert/img/MY PROJECT (3).png" alt="gallery">
     <nav>
         <div class="myDive">
@@ -80,7 +84,7 @@
     <h1>Gallery</h1>
 </section>
 
-<section class="contact">
+<section data-aos="zoom-in"class="contact">
     <img class="image" src="assert/img/CONTACT%20US%20(1).png" alt="gallery">
     <nav>
         <div class="myDive">
@@ -90,7 +94,7 @@
     </nav>
     <h1>CONTACT</h1>
 </section>
-
+<!--/////////////////////////////////////footer section///////////////////////////////////////-->
 <footer>
     <div>
         <h1>STAY IN TUCH</h1>
@@ -107,6 +111,10 @@
 
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
 </body>

@@ -1,8 +1,10 @@
 
 
-
+body{
+    background-color: black;
+}
 .logo{
-    width: 50px;
+    width: 100px;
     aspect-ratio: 1/1;
 }
 .header {
@@ -13,8 +15,8 @@
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 0 2rem;
-    /*box-shadow: rgb(254, 254, 254) 0px 3px 6px, rgb(254, 254, 254)0px 3px 6px;*/
-    height: 6rem;
+    box-shadow: rgb(254, 254, 254) 0px 3px 6px, rgb(254, 254, 254)0px 3px 6px;
+    height: 9rem;
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -22,15 +24,18 @@
 }
 
 .navbar {
+    position: absolute;
     display: flex;
     align-items: center;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 ;
+    right: 0;
     overflow: hidden;
 }
 
 .navbar__menu {
     position: relative;
+    right: 0;
     display: flex;
 
 }
@@ -42,10 +47,10 @@
     align-items: center;
     justify-content: center;
     height: 4rem;
-    width: 10rem;
+    /*width: 20rem;*/
     color: #fff;
     text-decoration: none;
-    width: 10rem;
+    width: 12rem;
     text-transform: uppercase;
     transition: 500ms ease all;
 
@@ -60,6 +65,7 @@
 span{
     color: red;
     font-style: normal;
+    font-size: 30px;
 }
 .navbar:not(:hover) .navbar__link:focus span, .navbar__link:hover span {
     opacity: 1;
@@ -278,24 +284,27 @@ span{
 .hero{
     position: relative;
     border: black 2px solid;
+    width: calc(100vw - 30px);
     height: 90vh;
 }
 .hero>img{
-    width: calc(100vw - 15px);
-    height: 90vh;
+    position: absolute;
+    bottom: 3vw;
+    left: 10vw;
+    width: 1700px;
+    height: 900px;
 }
 .name{
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 10vw;
+    left: 5vw;
     height: fit-content;
     text-align: center;
+    animation: type 5s infinite;
     text-transform: uppercase;
     color: #F1FAEE;
-    font-size: 4rem;
+    font-size: 5rem;
+
 }
 
 .roller{
@@ -309,6 +318,7 @@ span{
     align-items: center;
     color: #1D3557;
 }
+
 
 #spare-time{
     font-size: 1rem;
@@ -338,6 +348,19 @@ span{
         top: -12.25rem;
     }
 }
+@keyframes type {
+    from{
+       left: 5vw;
+        top: 20vw;
+
+    }
+    to{
+        rotation: 180turn;
+        left: 1vw;
+        top: 5vw;
+        color: #01FE09;
+    }
+}
 h1{
     color: white;
 }
@@ -346,14 +369,14 @@ h1{
     border: black 2px solid;
     height: 90vh;
 }
-.about>img{
-    width: calc(100vw - 15px);
-    height: 90vh;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backfacevisibility-: hidden;
-}
+/*.about>img{*/
+/*    width: calc(100vw - 15px);*/
+/*    height: 90vh;*/
+/*    opacity: 1;*/
+/*    display: block;*/
+/*    transition: .5s ease;*/
+/*    backfacevisibility-: hidden;*/
+/*}*/
 .myDive{
     transition: .5s ease;
     opacity: 0;
@@ -414,19 +437,20 @@ h1{
     margin: auto;
     color: white;
 }
+
 .project{
     position: relative;
     border: black 2px solid;
     height: 90vh;
 }
-.project>img{
-    width: calc(100vw - 15px);
-    height: 90vh;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backfacevisibility-: hidden;
-}
+/*.project>img{*/
+/*    width: 100vw;*/
+/*    height: 90vh;*/
+/*    opacity: 1;*/
+/*    display: block;*/
+/*    transition: .5s ease;*/
+/*    backfacevisibility-: hidden;*/
+/*}*/
 .project>nav>div>a img{
     position: relative;
     top: 15vw;
@@ -452,14 +476,14 @@ h1{
     border: black 2px solid;
     height: 90vh;
 }
-.gallery>img{
-    width: calc(100vw - 15px);
-    height: 90vh;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backfacevisibility-: hidden;
-}
+/*.gallery>img{*/
+/*    width: calc(100vw - 15px);*/
+/*    height: 90vh;*/
+/*    opacity: 1;*/
+/*    display: block;*/
+/*    transition: .5s ease;*/
+/*    backfacevisibility-: hidden;*/
+/*}*/
 .gallery>nav>div>a img{
     position: relative;
     top: 10vw;
@@ -485,14 +509,14 @@ h1{
     border: black 2px solid;
     height: 90vh;
 }
-.contact>img{
-    width: calc(100vw - 15px);
-    height: 90vh;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backfacevisibility-: hidden;
-}
+/*.contact>img{*/
+/*    width: calc(100vw - 15px);*/
+/*    height: 90vh;*/
+/*    opacity: 1;*/
+/*    display: block;*/
+/*    transition: .5s ease;*/
+/*    backfacevisibility-: hidden;*/
+/*}*/
 .contact>nav>div>a img{
     position: relative;
     top: 15vw;
@@ -512,6 +536,14 @@ h1{
     height: fit-content;
     font-size: 200px;
     margin: auto;
+}
+.image{
+    width: calc(100vw - 30px);
+    height: 90vh;
+    opacity: 0.2;
+    display: block;
+    transition: .5s ease;
+    backfacevisibility-: hidden;
 }
 
 footer>div{
@@ -551,12 +583,47 @@ footer>div>h3{
     position: relative;
     top: 5vw;
 }
+/*/////////////////////////footer style//////////////*/
 
-/*@media all and (max-width:1440px) {*/
-/*    .hero>img{*/
-/*        height: 800px;*/
-/*    }*/
-/*}*/
+/*///////////////////////////////////////////////////*/
+@media all and (max-width:1440px) {
+
+
+    .hero{
+        position: relative;
+        width: 100vw;
+
+    }
+    .hero>img{
+        /*display: none;*/
+        position: relative;
+        top: 5vw;
+        width: 800px;
+        height: 500px;
+        left: 40vw;
+    }
+    .header{
+        height: 150px;
+        right: 0;
+    }
+    .navbar{
+        position: absolute;
+        margin: 0;
+        right: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+        width: 150px;
+    }
+   .image{
+    width: 100%;
+    }
+   .name{
+       position: absolute;
+       top: 15vw;
+   }
+}
 
 /*///////Tab size///*/
 @media all and (max-width : 768px) {
