@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+<div  id="preloader">
+    <div id="preloader-over-layer"></div>
+    <img src="assets/image/preloader.gif"
+         alt="preloader"
+         width="100">
+</div>
 <div class="header">
     <div class="header__logo">
         <strong><img src="assert/img/icon.png" alt="ican" class="logo"></strong>
@@ -41,9 +47,7 @@
         </ul>
     </nav>
 </div>
-<section class="hero">
-    <img class="profile" src="assert/img/pro.png" alt="PROFILE PHOTO">
-
+<section id="portfolio">
     <h1  class="name" >MANEESHA DILSHAN <div class="roller">
             <span id="rolltext">HTML<br/>
             CSS<br/>
@@ -52,47 +56,36 @@
             </span>
     </div>
     </h1>
-</section >
-<section class="about">
-    <img data-aos="zoom-in" class="image" src="assert/img/MY%20PROJECT%20(2).png" alt="about">
-    <nav>
-        <div class="myDive">
-            <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
-        </div>
-    </nav>
-    <h1 data-aos="fade-up"
-        data-aos-duration="3000">ABOUT</h1>
+    <img src="assert/img/blackProfile.png" alt="">
+    <div class="myDive">
+        <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
+    </div>
+
 </section>
+<section id="press">
+    <h2>ABOUT</h2>
+    <div class="myDive">
+        <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
+    </div>
 
-<section class="project">
-    <img data-aos="zoom-in" class="image" src="assert/img/MY%20PROJECT%20(1).png" alt="gallery">
-    <nav>
-        <div class="myDive">
-            <a href="project.html"><img class="icon"  src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
-        </div>
-    </nav>
-    <h1 class="h1">PROJECT</h1>
 </section>
+<section id="shop">
+    <h2>PROJECT</h2>
+    <div class="myDive">
+        <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
+    </div>
 
-<section data-aos="zoom-in" class="gallery">
-    <img class="image" src="assert/img/MY PROJECT (3).png" alt="gallery">
-    <nav>
-        <div class="myDive">
-            <a href="Gallery.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
-        </div>
-    </nav>
-    <h1>Gallery</h1>
 </section>
+<section id="gallery">
+    <h2>gallery</h2>
+    <div class="myDive">
+        <a href="about.html"><img class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
+    </div>
 
-<section data-aos="zoom-in"class="contact">
-    <img class="image" src="assert/img/CONTACT%20US%20(1).png" alt="gallery">
-    <nav>
-        <div class="myDive">
-            <a href="contact.html"><img  class="icon" src="assert/img/icons8-plus-100.png" alt="icon"width="50"></a>
+</section>
+<section id="about">
+    <h2>CONTACT</h2>
 
-        </div>
-    </nav>
-    <h1>CONTACT</h1>
 </section>
 <!--/////////////////////////////////////footer section///////////////////////////////////////-->
 <footer>
@@ -112,8 +105,10 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assert/lib/jQuery.min.js"></script>
 <script>
     AOS.init();
+    window.onload();
 </script>
 </body>
 </html>

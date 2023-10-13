@@ -4,7 +4,7 @@ body{
     background-color: black;
 }
 .logo{
-    width: 100px;
+    width: 50px;
     aspect-ratio: 1/1;
 }
 .header {
@@ -15,8 +15,8 @@ body{
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 0 2rem;
-    box-shadow: rgb(254, 254, 254) 0px 3px 6px, rgb(254, 254, 254)0px 3px 6px;
-    height: 9rem;
+    /*box-shadow: rgb(254, 254, 254) 0px 3px 6px, rgb(254, 254, 254)0px 3px 6px;*/
+    height: 4rem;
     display: flex;
     align-items: center;
     gap: 3rem;
@@ -27,7 +27,7 @@ body{
     position: absolute;
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 200PX;
     margin: 0 ;
     right: 0;
     overflow: hidden;
@@ -37,6 +37,7 @@ body{
     position: relative;
     right: 0;
     display: flex;
+
 
 }
 .navbar__link {
@@ -65,7 +66,7 @@ body{
 span{
     color: red;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
 }
 .navbar:not(:hover) .navbar__link:focus span, .navbar__link:hover span {
     opacity: 1;
@@ -284,14 +285,15 @@ span{
 .hero{
     position: relative;
     border: black 2px solid;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 50px);
     height: 90vh;
 }
 .hero>img{
+    /*display: none;*/
     position: absolute;
     bottom: 3vw;
     left: 10vw;
-    width: 1700px;
+    width: 1000px;
     height: 900px;
 }
 .name{
@@ -303,7 +305,7 @@ span{
     animation: type 5s infinite;
     text-transform: uppercase;
     color: #F1FAEE;
-    font-size: 5rem;
+    font-size: 3rem;
 
 }
 
@@ -350,7 +352,7 @@ span{
 }
 @keyframes type {
     from{
-       left: 5vw;
+        left: 5vw;
         top: 20vw;
 
     }
@@ -369,14 +371,7 @@ h1{
     border: black 2px solid;
     height: 90vh;
 }
-/*.about>img{*/
-/*    width: calc(100vw - 15px);*/
-/*    height: 90vh;*/
-/*    opacity: 1;*/
-/*    display: block;*/
-/*    transition: .5s ease;*/
-/*    backfacevisibility-: hidden;*/
-/*}*/
+
 .myDive{
     transition: .5s ease;
     opacity: 0;
@@ -386,18 +381,6 @@ h1{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-/*.project:hover .image {*/
-/*    !*opacity: 0.3;*!*/
-/*}*/
-/*.about:hover .image {*/
-/*    opacity: 0.3;*/
-/*}*/
-/*.gallery:hover .image {*/
-/*    opacity: 0.3;*/
-/*}*/
-/*.contact:hover .image {*/
-/*    opacity: 0.3;*/
-/*}*/
 
 .project:hover .myDive {
     opacity: 1;
@@ -443,14 +426,7 @@ h1{
     border: black 2px solid;
     height: 90vh;
 }
-/*.project>img{*/
-/*    width: 100vw;*/
-/*    height: 90vh;*/
-/*    opacity: 1;*/
-/*    display: block;*/
-/*    transition: .5s ease;*/
-/*    backfacevisibility-: hidden;*/
-/*}*/
+
 .project>nav>div>a img{
     position: relative;
     top: 15vw;
@@ -585,277 +561,77 @@ footer>div>h3{
 }
 /*/////////////////////////footer style//////////////*/
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* .navbarScroll.navbarDark {
+    background-color: black;
+} */
+
+.nav-link {
+    color: rgb(247, 246, 246);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+#portfolio>img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 50vw;
+}
+#portfolio {
+    /*background-image: url("../a");*/
+    /*background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: black;
+    position:relative;
+    background-attachment: fixed;
+    color: white;
+}
+
+#press {
+    background: linear-gradient(45deg, #F90F0F, #010101, #110450, #23d5ab);
+
+}
+#gallery{
+    background: linear-gradient(45deg, #ffb3b3, #ffcccc, #ccccff, #23d5ab);
+}
+
+
+#shop {
+    background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    background-attachment: fixed;
+    color: white;
+}
+
+#about {
+    background: linear-gradient(-45deg, #ee7752,   #e73c7e, #23a6d5, #23d5ab);
+}
+
+h2 {
+    font-family: Garamond, sans-serif;
+}
+header{
+    position: sticky;
+}
+
+
 /*///////////////////////////////////////////////////*/
-@media all and (max-width:1440px) {
 
-
-    .hero{
-        position: relative;
-        width: 100vw;
-
-    }
-    .hero>img{
-        /*display: none;*/
-        position: relative;
-        top: 5vw;
-        width: 800px;
-        height: 500px;
-        left: 40vw;
-    }
-    .header{
-        height: 150px;
-        right: 0;
-    }
-    .navbar{
-        position: absolute;
-        margin: 0;
-        right: 0;
-    }
-    .logo{
-        position: absolute;
-        top: 0;
-        width: 150px;
-    }
-   .image{
-    width: 100%;
-    }
-   .name{
-       position: absolute;
-       top: 15vw;
-   }
-}
-
-/*///////Tab size///*/
-@media all and (max-width : 768px) {
-    span{
-        color: white;
-    }
-   .navbar{
-       width: 760px;
-   }
-   .navbar__item{
-       width: 30px;
-       padding: 35px;
-   }
-   .navbar__menu{
-       position: relative;
-       left: 0;
-   }
-    footer{
-        position: relative;
-    }
-    footer>div>h1 {
-        top: 4vw;
-    }
-    .hero>h1{
-        position: absolute;
-        left: 6vw;
-    }
-}
-
-@media all and (max-width:425px) {
-    .logo{
-        position: relative;
-        left: 0;
-        width: 15px;
-        aspect-ratio: 1/1;
-    }
-    .navbar__menu{
-       position: relative;
-        /*top: 0;*/
-        right: 10vw;
-
-    }
-    .header {
-        gap: 0;
-    }
-    .navbar__link {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-        align-items: center;
-        justify-content: center;
-        height: 3.5rem;
-        width: 10rem;
-        color: #fff;
-        text-decoration: none;
-        width: 1px;
-        text-transform: uppercase;
-        transition: 500ms ease all;
-    }
-
-    .navbar__item{
-        position: relative;
-        right:10vw;
-        width: 3px;
-    }
-    .navbar__item span{
-        color: #01FE09;
-        font-size: 8px;
-
-    }
-
-    .hero{
-        height: 250px;
-    }
-    .hero>img{
-        width: 100%;
-        height: 250px;
-    }
-    .name{
-        font-size: 25px;
-    }
-    .roller{
-        height: 2.5rem;
-    }
-    .about>img{
-        position: relative;
-        height: 250px;
-        width: 100%;
-    }
-    .about{
-        position: relative;
-        height: 250px;
-    }
-
-    .about>h1{
-        font-size: 50px;
-    }
-    .project{
-        height: 250px;
-    }
-    .project>img{
-        width: 100%;
-        height: 250px;
-    }
-
-    .project>h1{
-        font-size: 50px;
-    }
-    .gallery{
-        height: 250px;
-    }
-    .gallery>img{
-        width: 100%;
-        height: 250px;
-    }
-    .gallery>h1{
-        font-size: 50px;
-    }
-    .contact{
-        height: 250px;
-    }
-    .contact>img{
-        width: 100%;
-        height: 250px;
-    }
-    .contact>h1{
-        font-size: 50px;
-    }
-
-    footer>div{
-        height: 100px;
-    }
-
-    footer>div>h1 {
-        top: 10px;
-        font-size: 15px;
-    }
-    footer>div>nav>a>img{
-        width: 25px;
-    }
-    footer>div>nav{
-        width: fit-content;
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-    }
-    footer>div>h3{
-        font-size: 15px;
-    }
-    .call{
-        top: 5px;
-    }
-}
-@media all and (max-width:375px) {
-    .name{
-        font-size: 25px;
-    }
-    .about>h1{
-        font-size: 40px;
-    }
-    .project>h1{
-        font-size: 40px;
-    }
-    .gallery>h1{
-        font-size: 40px;
-    }
-    .contact>h1{
-        font-size: 40px;
-    }
-    .navbar__item{
-        position: relative;
-       right: 18vw;
-    }
-    .logo{
-        position: relative;
-        display: none;
-        left: 0;
-        width: 12px;
-        aspect-ratio: 1/1;
-    }
-    .navbar__menu{
-        position: relative;
-        /*top: 0;*/
-        width: 1px;
-        left: 0;
-
-
-    }
-    .navbar__item span{
-        color: #01FE09;
-        font-size: 6px;
-
-    }
-
-}
-/*///mobile Small//*/
-@media all and (max-width:320px) {
-    .hero{
-        height: 200px;
-    }
-    .hero>img{
-        height: 200px;
-    }
-    .name{
-        font-size: 20px;
-    }
-    .about>img{
-        height: 200px;
-    }
-    .about{
-        height: 200px;
-    }
-    .project{
-        height: 200px;
-    }
-    .project>img{
-        height: 200px;
-    }
-    .gallery{
-        height: 200px;
-    }
-    .gallery>img{
-        height: 200px;
-    }
-    .contact{
-        height: 200px;
-    }
-    .contact>img{
-        height: 200px;
-    }
-    .call{
-        top: 10px;
-    }
-}
