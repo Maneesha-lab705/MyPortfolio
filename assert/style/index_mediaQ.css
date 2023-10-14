@@ -1,0 +1,360 @@
+@media all  and (max-width:1440px)  {
+
+}
+
+@media all  and (max-width:1024px)  {
+    .name{
+        width: 500px;
+        color: red;
+        font-size: 40px;
+        position: absolute;
+        left: 0vw;
+        margin: 0;
+        animation: type2 5s infinite;
+    }
+    @keyframes type2 {
+        from{
+            top: 35vw;
+
+        }
+        to{
+            top: 20vw;
+            color: #01FE09;
+        }
+    }
+    #portfolio>img{
+        width: 450px;
+        aspect-ratio: 1/1;
+        right: 10px;
+    }
+    span{
+        font-size: 10px;
+    }
+    #spare-time{
+        font-size: 13px;
+    }
+    .call{
+        position: relative;
+        left: 42vw;
+    }
+    .gmail{
+        position: absolute;
+        left: 37vw;
+    }
+}
+@media all  and (max-width:768px)  {
+    .name{
+        width: 350px;
+        color: red;
+        font-size: 28px;
+        position: absolute;
+        left: 0vw;
+        margin: 0;
+        animation: type2 5s infinite;
+    }
+    @keyframes type2 {
+        from{
+            top: 35vw;
+            left: 2vw;
+            color: white;
+
+        }
+        to{
+            top: 25vw;
+            left: 5vw;
+            color: #01FE09;
+        }
+    }
+    #portfolio>img{
+        position: absolute;
+        top: 10vw;
+        width: 350px;
+      height: 280px;
+    }
+    #spare-time{
+        font-size: 5px;
+
+    }
+    .call{
+        position: relative;
+        top: 10vw;
+        left: 40vw;
+    }
+    .gmail{
+        position: absolute;
+        top: 12vw;
+        left: 31vw;
+    }
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 40vw;
+    }
+
+    #footerh1{
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+@media all  and (max-width:425px){
+    .header{
+        display: none;
+    }
+    #portfolio>img{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 22vw;
+
+    }
+    .name{
+        position: relative;
+        font-size: 20px;
+        animation: updown 5s infinite;
+    }
+    @keyframes updown {
+        0%{
+            left: 2vw;
+            top: 30vh;
+
+        }
+
+        10%{
+            color: #01FE09;
+            left: 5vw;
+            /*display: none;*/
+        }
+        40%{
+            color: #00a1a7;
+            display: none;
+        }
+        to{
+            top: 15vh;
+        }
+    }
+    .dropdown-btn {
+        /*background-color: #df4356;*/
+        display: block;
+        width: 50px;
+        position: relative;
+        left: 80vw;
+        z-index: 9999;
+    }
+    .dropdown {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: inline-block;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        left: 40vw;
+        top: 7vw;
+        background: transparent;
+        color: white;
+        min-width: 200px;
+        box-shadow: 5px 16px 16px 8px rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    .dropdown-menu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-menu a:hover {
+        background: transparent;
+        color: red;
+
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .gmail{
+        position: absolute;
+        left: 0;
+    }
+    h2{
+        position: relative;
+        font-size: 40px;
+        left: 10vw;
+
+    }
+    .icon{
+        position: relative;
+        top: 8vh;
+        left: 13vw;
+        display: block;
+    }
+    .call{
+        position: absolute;
+        top: 18vh;
+        left: 33vw;
+    }
+    .gmail{
+        position: relative;
+        top: 13vh;
+        left: 18vw;
+    }
+    nav
+    {
+        position: absolute;
+        left: 35vw;
+    }
+
+}
+@media all  and (max-width:375px){
+    .header{
+        display: none;
+    }
+    #portfolio>img{
+        position: absolute;
+        top: 0vh;
+        width: 200px;
+        height: 200px;
+        left: 15vw;
+
+    }
+    .name{
+        position: relative;
+        font-size: 15px;
+        animation: updown 5s infinite;
+    }
+    @keyframes updown {
+        0%{
+            left: 2vw;
+            top: 20vh;
+            color: white;
+
+        }
+
+        to{
+            top: 15vh;
+        }
+    }
+    section{
+        width: 100vw;
+        height: 300px;
+    }
+    .call{
+        position: relative;
+        top: 8vh;
+        left: 33vw;
+    }
+    .gmail{
+        position: relative;
+        top: 5vh;
+        left: 15vw;
+    }
+    nav>a>img{
+        position: relative;
+        left: 10vw;
+        top: 5vh;
+        width: 20px;
+    }
+    #footerh1{
+        position: relative;
+        left: 5vw;
+    }
+    .icon{
+        position: relative;
+        left: 8vw;
+    }
+}
+@media all  and (max-width:320px){
+    .dropdown-menu a {
+       font-size: 10px;
+    }
+    .dropdown-btn>img{
+        width: 25px;
+    }
+    section{
+        height: 200px;
+    }
+    .header{
+        display: none;
+    }
+    #portfolio>img{
+        position: absolute;
+        top: 0;
+        width: 150px;
+        height: 150px;
+        left: 20vw;
+
+    }
+    .name{
+        position: relative;
+        left: 0;
+        top: 25vw;
+        font-size: 10px;
+        animation: none;
+    }
+    .roller{
+        height: 2rem;
+        line-height: 1rem;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1D3557;
+    }
+
+
+    #spare-time{
+        font-size: 5px;
+        font-style: italic;
+        letter-spacing: 1rem;
+        margin-top: 0;
+        color: #A8DADC;
+
+    }
+    .roller #rolltext {
+        position: absolute;
+        top: 0;
+        animation: slide 5s infinite;
+    }
+
+    @keyframes slide {
+        0%{
+            top:0;
+        }
+        25%{
+            top: -2rem;
+        }
+        50%{
+            top: -4rem;
+        }
+        72.5%{
+            top: -6.25rem;
+        }
+    }
+    @keyframes type {
+        from{
+            left: 5vw;
+            top: 20vw;
+
+        }
+        to{
+            rotation: 360turn;
+            left: 1vw;
+            top: 5vw;
+            color: #01FE09;
+        }
+    }
+    span{
+        font-size: 5px;
+    }
+    .icon{
+        top: 5vh;
+        width: 30px;
+    }
+
+
+}
