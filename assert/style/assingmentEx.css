@@ -10,7 +10,6 @@ header{
 }
 main{
     position: relative;
-    /*border: #018A8A 2px solid;*/
     top: 50px;
 }
 
@@ -30,7 +29,6 @@ main>h1{
     top: 50px;
     width: calc(100vw - 100px);
     height: 350px;
-    /*border: #018A8A solid 2px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -41,10 +39,9 @@ main>h1{
     position: relative;
     width: 300px;
     height: 300px;
-    top: 50px;
-    border: #018A8A solid 1px;
-    /*margin-left: 50px;*/
-    /*margin-right: 50px;*/
+    border: red solid 1px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 100px;
 }
 main h1{
@@ -52,29 +49,7 @@ main h1{
     left: 10vw;
 }
 
-.cart1{
 
-}
-.cart2{
-
-}
-.cart3{
-
-
-}
-.cart4{
-
-}
-.cart5{
-position: absolute;
-    top: 25vw;
-    left:3vw;
-}
-.cart6{
-    position: absolute;
-    top: 25vw;
-    left: 26.5vw;
-}
 .assignment_img {
     width: 140px;
     height: 120px;
@@ -141,241 +116,3 @@ button {
 
 
 
-@media all and (max-width: 1440px){
-    .assignment{
-        display: flex;
-        position: absolute;
-        left: 10vw;
-    }
-    .cart5{
-        position: absolute;
-        top: 30vw;
-        left: 1vw;
-    }
-    .cart6{
-        position: absolute;
-        top: 30vw;
-        left:25vw;
-    }
-}
-
-@media all and (max-width: 1024px) {
-    .assignment{
-        position: absolute;
-        left: 4vw;
-    }
-    .cart{
-        position: relative;
-        left: 2vw;
-       margin: 30px;
-        display: flex;
-    }
-/*.cart4{*/
-/*    position: relative;*/
-/*    left: 0.5vw;*/
-/*}*/
-    .cart5{
-        position: absolute;
-        top: 75vw;
-        left: 7vw;
-        /*right: 15vw;*/
-    }
-    .cart6{
-        position: absolute;
-        top: 75vw;
-        left: 52vw;
-    }
-}
-
-@media all and (max-width:768px) {
-    .cart{
-
-    }
-    .assignment{
-        /*background-color: #01FE09;*/
-        left: 0;
-        width: 760px;
-    }
-    .cart1{
-        position: absolute;
-        right:40vw;
-    }
-    .cart2{
-        position: absolute;
-        left: 50vw;
-    }
-    .cart3{
-        position: absolute;
-        top: 50vw;
-
-    }
-    .cart4{
-        position: absolute;
-        top: 50vw;
-        left: 50vw;
-    }
-    .cart5{
-        position: absolute;
-        top:95vw ;
-       left: 2vw;
-    }
-    .cart6{
-        position: absolute;
-        top: 95vw;
-        left: 50vw;
-    }
-}
-@media all and (max-width:425px) {
-    main h1{
-        position: absolute;
-        left: 55vw;
-    }
-    .cart{
-        position: absolute;
-        top: 0;
-        width: 250px;
-    }
-    .assignment{
-        /*background-color: #01FE09;*/
-        left: 0;
-        width: 760px;
-    }
-    .assignment_img  img{
-        width: 250px;
-        /*height: px;*/
-        position: relative;
-    }
-    .cart1{
-        position: absolute;
-        left:15vw;
-    }
-    .cart2{
-        position: absolute;
-        left: 90vw;
-    }
-    .cart3{
-        position: absolute;
-        top: 80vw;
-        left: 15vw;
-
-    }
-    .cart4{
-        position: absolute;
-        top: 80vw;
-        left: 90vw;
-    }
-    .cart5{
-        position: absolute;
-        top:160vw ;
-        left: 15vw;
-    }
-    .cart6{
-        position: absolute;
-        top: 160vw;
-        left: 90vw;
-    }
-}
-
-@media all and (max-width:375px) {
-    main h1{
-        position: absolute;
-        left: 55vw;
-    }
-    .cart{
-        position: absolute;
-        top: 0;
-        width: 200px;
-        left: 15vw;
-    }
-    .assignment{
-        /*background-color: #01FE09;*/
-        left: 0;
-        width: 760px;
-    }
-    .assignment_img  img{
-        width: 200px;
-        /*height: px;*/
-        position: relative;
-    }
-    .cart1{
-        position: absolute;
-        left:20vw;
-    }
-    .cart2{
-        position: absolute;
-        left: 110vw;
-    }
-    .cart3{
-        position: absolute;
-        top: 90vw;
-        left: 20vw;
-
-    }
-    .cart4{
-        position: absolute;
-        top: 90vw;
-        left: 110vw;
-    }
-    .cart5{
-        position: absolute;
-        top:180vw ;
-        left: 20vw;
-    }
-    .cart6{
-        position: absolute;
-        top: 180vw;
-        left: 110vw;
-    }
-}
-
-@media all and (max-width:320px) {
-    main h1{
-        position: absolute;
-        left: 55vw;
-    }
-    .cart{
-        position: absolute;
-        top: 0;
-        width: 200px;
-        left: 15vw;
-    }
-    .assignment{
-        /*background-color: #01FE09;*/
-        left: 0;
-        width: 760px;
-    }
-    .assignment_img  img{
-        width: 200px;
-        /*height: px;*/
-        position: relative;
-    }
-    .cart1{
-        position: absolute;
-        left:20vw;
-    }
-    .cart2{
-        position: absolute;
-        left: 110vw;
-    }
-    .cart3{
-        position: absolute;
-        top: 100vw;
-        left: 20vw;
-
-    }
-    .cart4{
-        position: absolute;
-        top: 100vw;
-        left: 110vw;
-    }
-    .cart5{
-        position: absolute;
-        top:200vw ;
-        left: 20vw;
-    }
-    .cart6{
-        position: absolute;
-        top: 200vw;
-        left: 110vw;
-    }
-}
