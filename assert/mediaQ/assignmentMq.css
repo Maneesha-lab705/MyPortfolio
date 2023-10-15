@@ -1,0 +1,148 @@
+/*@media all and (max-width: 1440px){*/
+/*    .container{*/
+/*        width: 1000px;*/
+/*        position: relative;*/
+/*        display: flex;*/
+/*        justify-content: space-between;*/
+/*    }*/
+
+/*    .container .card{*/
+/*        position: relative;*/
+/*        cursor: pointer;*/
+/*        left: 0;*/
+/*        padding: 2vw;*/
+/*    }*/
+/*    button{*/
+/*        position: relative;*/
+
+/*    }*/
+/*}*/
+
+
+@media all and (max-width: 1024px){
+
+    main>h1{
+        position: absolute;
+        /*top: 10px;*/
+        top: 5vh;
+        left: 32vw;
+        font-size: 40px;
+        width: fit-content;
+    }
+
+}
+
+@media all and (max-width: 768px){
+    main>h1{
+        position: absolute;
+        /*top: 10px;*/
+        top: 5vh;
+        left: 32vw;
+        font-size: 40px;
+        width: fit-content;
+    }
+
+
+}
+
+@media all and (max-width:425px) {
+    main>h1{
+        position: absolute;
+        /*top: 10px;*/
+        top: 3vh;
+        left: 25vw;
+        font-size: 30px;
+        width: fit-content;
+    }
+    .cart{
+        position: relative;
+        width: 200px;
+        height: 250px;
+        border: red solid 1px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+    }
+    .assignment_img>img{
+        width: 200px;
+        height: 120px;
+        position: relative;
+    }
+    .text{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25vh;
+        margin: auto;
+        width: fit-content;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .button{
+        position: absolute;
+        top: 30vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+        border-radius: 20px;
+
+    }
+
+    /*.minimize:hover.label{*/
+    /*    display: block;*/
+    /*}*/
+
+}
+
+
+@media all and (max-width:375px) {
+
+}
+
+@media all and (max-width:320px) {
+    main>h1{
+        left: 28vw;
+        font-size: 20px;
+        color: #01FE09;
+    }
+    .cart{
+        position: relative;
+        width: 150px;
+        height: 170px;
+        border: red solid 1px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+    }
+    .assignment_img>img{
+        width: 150px;
+        height: 80px;
+        position: relative;
+    }
+    .text{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15vh;
+        margin: auto;
+        width: fit-content;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .button{
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+        border-radius: 20px;
+        font-size: 8px;
+
+    }
+    .button>a>button{
+        font-size: 8px;
+        width: 100px;
+    }
+}

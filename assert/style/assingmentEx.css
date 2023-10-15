@@ -4,31 +4,42 @@ body{
 }
 header{
     position: relative;
-    width: 40px;
-    height: 50px;
-    left: 50vw;
+}
+.label{
+    position: absolute;
+    width: fit-content;
+    top: 7vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    color: white;
 }
 main{
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 8vh;
+}
+.minimize{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
 }
 
 main>h1{
     position: absolute;
     /*top: 10px;*/
-    right: 0;
-    left: 0;
-    margin: auto;
+    top: 5vh;
+    left: 40vw;
     font-size: 40px;
     width: fit-content;
 }
 
 .assignment{
     position: relative;
-    left: 50px;
-    top: 50px;
-    width: calc(100vw - 100px);
-    height: 350px;
+    margin: 0;
+    top: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -44,10 +55,7 @@ main>h1{
     margin-right: 50px;
     margin-bottom: 100px;
 }
-main h1{
-    position: absolute;
-    left: 10vw;
-}
+
 
 
 .assignment_img {
@@ -112,6 +120,7 @@ button {
 .assignment_img:hover img {
     transform: scale(1.2);
 }
+
 
 
 

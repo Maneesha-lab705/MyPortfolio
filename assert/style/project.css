@@ -1,20 +1,23 @@
 body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
     background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: consolas;
+
 }
 
-
 .container{
-    width: 1000px;
+    width: 100%;
     position: relative;
+    top: 10vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.content>img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
 }
 
 .container .card{
@@ -103,188 +106,31 @@ body{
 header{
     position: absolute;
     top: 0;
+
+}
+.minimize{
+    position: relative;
+    width: 40px;
+    height: fit-content;
+    left: 45vw;
+
 }
 .assingmentBtn>button{
-    position: relative;
-    top: 30vw;
+    position: absolute;
+    top: 140vh;
     right: 10vw;
     color: red;
-    background-color: #01FE09;
-    width: 100px;
+    background-color: black;
+    width: 150px;
     height: 60px;
     border-radius: 10px 11px 21px 6px;
 
+
 }
 .assingmentBtn>button:hover{
-    transform: rotate(50deg);
+    transform: rotate(10deg);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
 
-@media all and (max-width: 1440px){
-    .container{
-        width: 1000px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .container .card{
-        position: relative;
-        cursor: pointer;
-        left: 0;
-        padding: 2vw;
-    }
-    button{
-        position: relative;
-
-    }
-}
-
-
-@media all and (max-width: 1024px){
-    .assingmentBtn>button{
-        position: absolute;
-        top: 35vw;
-        left: 85vw;
-    }
-    .container .card{
-        position: relative;
-        cursor: pointer;
-        padding: 1vw;
-        left: 1vw;
-    }
-
-
-}
-
-@media all and (max-width: 768px){
-
-    .assingmentBtn>button{
-        position: relative;
-        top: 45vw;
-        right: 10vw;
-
-    }
-    .container{
-        width: 1000px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .container .card{
-        position: relative;
-        cursor: pointer;
-        padding: 1vw;
-        left: 5vw;
-    }
-
-    .container .card .face{
-        width: 200px;
-        height: 200px;
-        transition: 0.5s;
-    }
-
-}
-
-@media all and (max-width:425px) {
-
-
-.container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-}
-
-.container .card{
-    position: relative;
-    cursor: pointer;
-    padding: 1vw;
-    left: 2vw;
-}
-
-.container .card .face{
-    width: 120px;
-    height: 200px;
-    transition: 0.5s;
-   }
-    .assingmentBtn>button{
-        position: absolute;
-        width: 100px;
-        height: 20px;
-        top: 80vw;
-        left:70vw;
-
-
-    }
-}
-
-
-@media all and (max-width:375px) {
-
-    .container{
-        width: 500px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        font-size: 9px;
-    }
-
-    .container .card{
-        position: relative;
-        cursor: pointer;
-        padding: 1vw;
-        left: 2vw;
-    }
-
-    .container .card .face{
-        width: 99px;
-        height: 200px;
-        transition: 0.5s;
-    }
-    .assingmentBtn>button{
-        position: absolute;
-        width: 100px;
-        height: 20px;
-        top: 90vw;
-        left:70vw;
-
-
-    }
-}
-
-@media all and (max-width:320px) {
-    .container{
-        width: 500px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        font-size: 5px;
-    }
-
-    .container .card{
-        position: relative;
-        cursor: pointer;
-        padding: 1vw;
-        left: 2vw;
-    }
-
-    .container .card .face{
-        width: 80px;
-        height: 200px;
-        transition: 0.5s;
-    }
-    .assingmentBtn>button{
-        position: absolute;
-        width: 100px;
-        height: 20px;
-        top: 100vw;
-        left:65vw;
-
-
-    }
-}

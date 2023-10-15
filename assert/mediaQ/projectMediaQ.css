@@ -1,0 +1,82 @@
+/*@media all and (max-width: 1440px){*/
+/*    .container{*/
+/*        width: 1000px;*/
+/*        position: relative;*/
+/*        display: flex;*/
+/*        justify-content: space-between;*/
+/*    }*/
+
+/*    .container .card{*/
+/*        position: relative;*/
+/*        cursor: pointer;*/
+/*        left: 0;*/
+/*        padding: 2vw;*/
+/*    }*/
+/*    button{*/
+/*        position: relative;*/
+
+/*    }*/
+/*}*/
+
+
+@media all and (max-width: 1024px){
+
+    .container{
+        width: 100%;
+        position: relative;
+        top: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .assingmentBtn>button{
+        position: absolute;
+        top: 230vh;
+        right: 10vw;
+        color: red;
+        background-color: black;
+        width: 150px;
+        height: 60px;
+        border-radius: 10px 11px 21px 6px;
+
+
+    }
+
+
+}
+
+@media all and (max-width: 768px){
+
+
+
+}
+
+@media all and (max-width:425px) {
+    .assingmentBtn>button{
+        position: absolute;
+        top: 420vh;
+        right: 10vw;
+        color: red;
+        background-color: black;
+        width: 150px;
+        height: 60px;
+        border-radius: 10px 11px 21px 6px;
+
+
+    }
+
+}
+
+
+@media all and (max-width:375px) {
+
+}
+
+@media all and (max-width:320px) {
+    .container .card .face{
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+}
