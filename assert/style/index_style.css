@@ -375,7 +375,10 @@ span{
     }
 }
 
-
+footer{
+    position: relative;
+    bottom: 0;
+}
 footer>div{
     position: absolute;
     background-color: rgb(34, 205, 22);

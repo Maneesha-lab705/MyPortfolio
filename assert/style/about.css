@@ -1,8 +1,10 @@
+@import "https://fonts.googleapis.com/css?family=Sofia";
 body{
     background-color: black;
     color: white;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 /*.about{*/
 /*    width: 500px;*/
@@ -20,8 +22,8 @@ header{
 }
 header>div>img{
     position: absolute;
-    width: 100vw;
-    height: 600px;
+    width: 98.5vw;
+    height: 400px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -66,34 +68,35 @@ header>div{
     position: absolute;
     width: fit-content;
     top:110px  ;
-    left:39vw;
+    left:38vw;
     bottom: 0;
     margin: 0;
     z-index: 9999;
     color: red;
-    font-size: 90px;
+    font-size: 70px;
 }
 main{
     position: absolute;
 }
 main>article{
     position: absolute;
-    top: 9vw;
+    top: 15vw;
     width: 40vw;
     left: 20px;
+
 }
 main>article>h2{
     position: relative;
     width: fit-content;
-    top:calc(100vw - 85vw)  ;
+    top:0vh ;
     z-index: 9999;
-    font-size: 50px;
+    font-size: 40px;
 }
 main>article>h3{
     background :transparent;
     position: relative;
     width: fit-content;
-    top:calc(100vw - 85vw)  ;
+    top:3vh  ;
     z-index: 9999;
     color: whitesmoke;
     font-size: 30px;
@@ -110,11 +113,7 @@ main>u{
     top:20vw;
 
 }
-main>button{
-    position: absolute;
-    top: 20vw;
-    left: 0;
-}
+
 article.day-forecast:hover{
     transform: scale(1.5);
 }
@@ -151,28 +150,17 @@ article.day-forecast:hover{
     margin: 0.2rem;
     font-size: 1rem;
 }
-footer{
-    position: absolute;
-    color: white;
-    top:90vw;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-}
 footer>div{
-    position: absolute;
+    position: relative;
+    top: 200vh;
     background-color: rgb(34, 205, 22);
-    box-shadow: red 0px -50px 36px -28px inset;
+    box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
     width: 100%;
     height: 200px;
     background: linear-gradient(to bottom, black, rgb(25,25,112));
     color: black;
 }
-div{
-    position: absolute;
-}
+
 footer>div>h1 {
     position: relative;
     color: white;
@@ -187,18 +175,20 @@ footer>div>h1 {
 footer>div>nav{
     width: fit-content;
     position: absolute;
-    right: 0;
-    bottom: 20px;
+    right: 44vw;
+    top: 0px;
 }
 footer>div>h3{
     width: fit-content;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    top: 10vw;
+    left: 40vw;
+
 }
 .call{
-    position: absolute;
-    bottom: 20px;
+    position: relative;
+    top: 5vw;
+    left: 44vw;
 }
 main>a>button{
     position: relative;
@@ -208,8 +198,8 @@ main>a>button{
     background-color: #eeeeee;
     border-radius: 15px ;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    top: 35vw;
-    left: 70vw;
+    top: 40vw;
+    left: 75vw;
     bottom: 4vw;
 }
 main>a>button:hover {
@@ -217,6 +207,7 @@ main>a>button:hover {
 }
 .box{
     position: relative;
+    top: 0vh;
     right: 0;
 }
 
@@ -230,8 +221,8 @@ main>a>button:hover {
     left: 60vw;
     background-color: #333;
     width: 400px;
-    height: 40px;
-    transform: skew(30deg);
+    height: 20px;
+    transform: skew(0deg);
     font-family: 'Orbitron', monospace;
 }
 .range:before {
@@ -245,7 +236,7 @@ main>a>button:hover {
      height: 100%;
      background-color: red;
      z-index: 0;
-     animation: load .5s forwards linear, glitch 2s infinite linear;
+     animation:  glitch 10s infinite ;
  }
 
 .range:after {
@@ -275,342 +266,10 @@ main>a>button:hover {
     0%, 5% {
         transform: translate(0, 0);
     }
-    1% {
-        transform: translate(-5%, -10%);
+    to{
+        width: var(--width);
     }
-    2% {
-        transform: translate(10%, 30%);
-    }
-    3%{
-        transform: translate(-43%, 10%);
-    }
-    4% {
-        transform: translate(2%, -23%);
-    }
+
 }
 
 
-@media all and (max-width:1440px) {
-    /*.forecast{*/
-    /*    position: relative;*/
-    /*    top: 300px;*/
-    /*    right: 20vw;*/
-    /*    margin: 0;*/
-    /*    padding: 0.3rem;*/
-    /*    background-color: #eee;*/
-    /*    color: black;*/
-    /*    border-bottom: solid 2px #01FE09;*/
-    /*    border-top: solid 2px #FE0101;*/
-
-    /*}*/
-    .range{
-        width: 400px;
-        height: 60px;
-    }
-    header>div>img{
-        width: 100%;
-    }
-    .h1{
-        position: absolute;
-        left: 35vw;
-    }
-    main>article{
-        position: absolute;
-        top: 10vw;
-    }
-    main>u{
-        left: 700px;
-        top:220px;
-    }
-    .forecast {
-        top: 250px;
-        left: 600px;
-        margin: 0;
-        }
-    main>a>button{
-        position: relative;
-        width: 150px;
-        height: 40px;
-        color: black;
-        background-color: #eeeeee;
-        border-radius: 15px ;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        top: 35vw;
-        left: 60vw;
-
-    }
-
-    footer{
-        top:120vw;
-    }
-}
-@media all and (max-width:1024px) {
-    header>div>img{
-        width: 100vw;
-        height: 400px;
-    }
-    main>article{
-        position: absolute;
-        top: 10vw;
-        width: 50vw;
-
-    }
-    main>article>h2{
-        font-size: 30px;
-    }
-    main>article>h3{
-        font-size: 20px;
-    }
-    main>u{
-        left: 550px;
-        top:200px;
-    }
-    .forecast {
-        top: 200px;
-        left: 550px;
-    }
-
-    main>a>button{
-        position: absolute;
-        top: 80vw;
-        left: 80vw;
-    }
-    footer{
-        top:120vw;
-        left: 0vw;
-        width: 1030px;
-    }
-    .range{
-        width: 300px;
-        height: 20px;
-    }
-    .box{
-        position: absolute;
-        top: 25vw;
-        left: 5vw;
-    }
-}
-@media all and (max-width:768px) {
-    header>div>img{
-        width: 1024px;
-    }
-    .h,.h1{
-        position: absolute;
-            left: 45vw;
-    }
-    .h3{
-        position: absolute;
-        left: 65vw;
-    }
-    header>div>a>img{
-        position: absolute;
-        left: 15vw;
-    }
-    main>article{
-        top: 100px;
-    }
-    main>article>h2{
-        font-size: 20px;
-    }
-    main>article>h3{
-        font-size: 15px;
-    }
-    main>u{
-        left: 400px;
-        top:200px;
-    }
-    .box{
-        position: absolute;
-        top: 10vw;
-        left: 20vw;
-    }
-    .range{
-        width: 300px;
-        height: 40px;
-    }
-    .forecast {
-        top: 200px;
-        left: 400px;
-    }
-    main>a>button{
-      top: 80vw;
-        left: 100vw;
-    }
-    footer{
-        top:1000px;
-    }
-}
-@media all and (max-width:425px) {
-    .h{
-        left: 18vw;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        margin: auto;
-        font-size: 40px;
-    }
-    .h3{
-        position: absolute;
-        left: 55vw;
-    }
-    .h1{
-        position: absolute;
-        left: 38vw;
-        font-size: 40px;
-    }
-    .icon{
-        position: absolute;
-        left: 5vw;
-    }
-    header>div>img{
-        width: 500px;
-        height: 250px;
-    }
-  main>article{
-        position: absolute;
-        width: 80vw;
-        height: 700px;
-        top: 0;
-    }
-  .box{
-      position: relative;
-      top: 110vw;
-
-  }
-  .range{
-      width: 300px;
-      height: 20px;
-      left: 0;
-  }
-    h3{
-        position: absolute;
-        width: 50%;
-    }
-    main>u{
-        left: 30px;
-        top:620px;
-    }
-    .forecast {
-        top: 620px;
-        left: 35px;
-    }
-    main>a>button{
-        position: absolute;
-        top: 200vw;
-        left: 70vw;
-    }
-    footer{
-        width: 500px;
-        top:270vw;
-        left: 0vw;
-    }
-    footer>div>h1 {
-        top: 50px;
-        font-size: 20px
-    }
-    footer>div>nav>a>img{
-        width: 30px;
-    }
-}
-@media all and (max-width:375px) {
-    main>article{
-        position: absolute;
-        width: 100vw;
-        height: 700px;
-        top: 0;
-    }
-
-    header>div>a>img{
-        position: relative;
-        top: 0;
-        left: 45px;
-    }
-    .h3{
-        position: relative;
-        top: 40px;
-        left: 58vw;
-    }
-    .box{
-        position: relative;
-        top: 120vw;
-        alignment: center;
-    }
-    .h{
-        position: relative;
-        top: 40px;
-        left: 15vw;
-    }
-    .h1{
-        position: relative;
-        top: 40px;
-        left: 45vw;
-    }
-    h2{
-        width: 100%;
-    }
-    main>u{
-        left: 30px;
-        top:690px;
-    }
-    .forecast {
-        top: 700px;
-        left: 30px;
-    }
-    main>a>button{
-        top:220vw;
-        left: 70vw
-    }
-    footer{
-        top:300vw;
-    }
-}
-@media all and (max-width:320px) {
-    main>u{
-        left: 30px;
-        top:760px;
-        font-size: 20px;
-    }
-    .forecast {
-        top: 750px;
-        left: 30px;
-        width: 300px;
-        height: 500px;
-    }
-    main>a>button{
-        width: 100px;
-        top: 270vw;
-        left: 300px;
-    }
-    main>article{
-        position: absolute;
-        width: 100vw;
-        height: 800px;
-        top: 0;
-    }
-    .box{
-        position: relative;
-        top: 160vw;
-    }
-    footer{
-        top:350vw
-    }
-    .icon{
-        position: absolute;
-        left: 20vw;
-    }
-    .h3{
-        position: absolute;
-        left: 70vw;
-
-    }
-    .h{
-        position: absolute;
-        top: 0;
-        left: 40vw;
-    }
-    .h1{
-        position: absolute;
-        top: 40vw;
-    }
-
-}
