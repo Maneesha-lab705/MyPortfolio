@@ -17,8 +17,13 @@
 </head>
 <header>
     <a href="index.html"><img class="minimize" src="assert/img/icons8-minus-100.png" alt="icon" width="40"></a>
+    <div class="dark_mood">
+        <img  class="dark mood" src="assert/img/icon/darkMode.png" alt="dark">
+        <img class="light mood" src="assert/img/icon/light.png" alt="light">
+    </div>
+
 </header>
-<body>
+<body id="body">
 <div class="container">
     <div class="card">
         <div class="face face1">
@@ -109,7 +114,22 @@
 </div>
 <a class="assingmentBtn" href="assignment.html"><button  class="animate__animated animate__heartBeat " >ASSINGMENT</button></a>
 
+<script src="assert/lib/jQuery.min.js"></script>
+<script>
+    $(".dark").on('click',()=>{
+        $('#body').css("background","#333");
+        $('.dark').css("display","none");
+        $('.light').css("display","block" );
+    });
 
+    $(".light").on('click',()=>{
+        $('#body').css("background","white");
+        $('.dark').css("display","block");
+        $('.light').css("display","none" );
+
+    });
+
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

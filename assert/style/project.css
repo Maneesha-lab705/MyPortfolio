@@ -131,6 +131,59 @@ header{
     transform: rotate(10deg);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+/*/////////////////////////////////////*/
+.dark_mood{
+    position: absolute;
+    top: 2vh;
+    left: 80vw ;
+    width: 200px;
+    height: 70px;
+    background: transparent;
+    /*border: 2px solid white;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+
+.mood{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 2vh;
+    left: 2vw;
+}
+.dark{
+    display: none;
+    animation: transwer 1s none;
+
+}
+.light{
+    left: 9vw;
+    animation: lightR 1s none;
+
+}
+@keyframes lightR {
+    from{
+        top: 2vh;
+        left: 2vw;
+        opacity: 1%;
+    }
+    to{
+        left: 9vw;
+        opacity: 100%;
+    }
+}
+@keyframes transwer {
+    from{
+        top: 2vh;
+        left: 10vw;
+        opacity: 1%;
+    }
+    to{
+        top: 2vh;
+        left: 2vw;
+        opacity: 100%;
+    }
 
 
+}
 

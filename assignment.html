@@ -17,13 +17,17 @@
 
          </style>
 </head>
-<body>
+<body id="body">
 <header>
     <a href="project.html"><img  class="minimize" src="assert/img/icons8-minus-100.png" alt="icon" width="40"></a>
     <h3 class="label">back</h3>
+    <div class="dark_mood">
+        <img  class="dark mood" src="assert/img/icon/darkMode.png" alt="dark">
+        <img class="light mood" src="assert/img/icon/light.png" alt="light">
+    </div>
 </header>
 <main>
-    <h1 data-aos="flip-right"><u data-aos="flip-left">ASSIGNMENT</u></h1>
+    <h1 data-aos="flip-right" class="word"><u data-aos="flip-left">ASSIGNMENT</u></h1>
     <div class="assignment">
         <div class="cart cart1">
             <div class="assignment_img">
@@ -170,6 +174,27 @@
         </div>
     </div>
 </main>
+<script src="assert/lib/jQuery.min.js"></script>
+<script>
+    $(".dark").on('click',()=>{
+        $('#body').css("background","black");
+        $('.dark').css("display","none");
+        $('.light').css("display","block" );
+        $('.text').css("display","block" );
+        $('.word').css("color","black");
+        // $('.dark_mood').css("background","white");
+    });
+
+    $(".light").on('click',()=>{
+        $('#body').css("background","white");
+        $('.word').css("color","black");
+        $('.dark').css("display","block");
+        $('.text').css("color","black");
+        $('.light').css("display","none" );
+
+    });
+
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
