@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Sofia";
 body{
     background-color: black;
-    color: white;
+    color: black;
     width: 100%;
     margin: 0;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ header{
 }
 header>div>img{
     position: absolute;
-    width: 98.5vw;
+    width: 99.5vw;
     height: 400px;
     top: 0;
     left: 0;
@@ -98,7 +98,7 @@ main>article>h3{
     width: fit-content;
     top:3vh  ;
     z-index: 9999;
-    color: whitesmoke;
+    color:black;
     font-size: 30px;
 
 }
@@ -271,5 +271,58 @@ main>a>button:hover {
     }
 
 }
+/*///////////////////////*/
+.dark_mood{
+    position: absolute;
+    top: 5vh;
+    left: 3vw ;
+    width: 200px;
+    height: 70px;
+    background: transparent;
+    /*border: 2px solid white;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+
+.mood{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 2vh;
+    left: 2vw;
+}
+.dark{
+    display: none;
+    animation: transwer 1s none;
+
+}
+.light{
+    left: 9vw;
+    animation: lightR 1s none;
+
+}
+@keyframes lightR {
+    from{
+        top: 2vh;
+        left: 2vw;
+        opacity: 1%;
+    }
+    to{
+      left: 9vw;
+        opacity: 100%;
+    }
+}
+@keyframes transwer {
+ from{
+     top: 2vh;
+     left: 10vw;
+     opacity: 1%;
+ }
+    to{
+        top: 2vh;
+        left: 2vw;
+        opacity: 100%;
+    }
 
 
+}
