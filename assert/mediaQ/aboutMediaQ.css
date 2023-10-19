@@ -2,9 +2,8 @@
 @media all and (max-width:1440px) {
 
     /*footer{*/
-    /*    position: relative;*/
-    /*    !*top: 300vh;*!*/
-    /*    bottom: 0;*/
+    /*    position: a;*/
+    /*    */
     /*}*/
     .icon{
         position: relative;
@@ -14,9 +13,9 @@
 
     }
     footer>div{
-        position: relative;
-        top: 150vh;
-        bottom: 0;
+        position: absolute;
+        /*top: 190vh;*/
+        /*bottom: 0;*/
         background-color: rgb(34, 205, 22);
         box-shadow: rgb(12, 13, 12) 0px -50px 36px -28px inset;
         width: 100%;
@@ -155,6 +154,10 @@
         width: 40px;
 
     }
+    footer{
+        /*display: none;*/
+        top: 50vh;
+    }
 
     #footerh1 {
         top: 10vh;
@@ -165,6 +168,20 @@
     }
     .gmail{
         left: 38vw;
+    }
+
+    .activity{
+        top: 160vh;
+    }
+    .responsive{
+        top: 180vh;
+        width: 200px;
+    }
+    .learn{
+        top: 230vh;
+    }
+    .media{
+        top: 200vh;
     }
 }
 @media all and (max-width:925px) {
@@ -264,13 +281,9 @@
         left: 80vw;
         width: 100px;
     }
-    footer>div>h3{
-        width: fit-content;
-        position: absolute;
-        top: 12vw;
-        left: 32vw;
-
-    }
+.gmail{
+    left: 30vw;
+}
     .call{
         position: relative;
         top: 10vw;
@@ -283,6 +296,25 @@
         position: absolute;
         color: #01FE09;
         left: 3vw;
+    }
+    .activity{
+        top: 125vh;
+    }
+    .responsive{
+        top: 40vh;
+        width: 200px;
+    }
+    .learn{
+        top: 230vh;
+    }
+    .media{
+        top: 100vh;
+       left: 0vw;
+    }
+    .learn_icon>img{
+        position: absolute;
+        left: 0;
+        width: 50px;
     }
 
 }
@@ -421,10 +453,10 @@
   }
     main>a>button{
         position: absolute;
-        top: 200vw;
+        top: 225vw;
         left: 60vw;
     }
-    footer>div>h3{
+   .gmail{
         width: fit-content;
         position: absolute;
         top: 25vw;
@@ -433,7 +465,7 @@
     }
     .call{
         position: relative;
-        top: 23vw;
+        top: 20vw;
         left: 28vw;
     }
    .icon{
@@ -447,6 +479,28 @@
         position: absolute;
         top: 10vh;
         left: 3vw;
+    }
+    .activity{
+        top: 160vh;
+        left: 34vw;
+    }
+    .responsive{
+        top: 110vh;
+        width: 100px;
+        width: 100px;
+        left: 1px;
+    }
+    .learn{
+        top: 220vh;
+        left: 34vw;
+    }
+    .media{
+        top: 130vh;
+        left: 5vw;
+
+    }
+    .dark_mood{
+        width: 100px;
     }
 
 }
@@ -502,13 +556,13 @@
       font-size: 12px;
   }
     main>a>button{
-        top:220vw;
+        top:250vw;
         left: 65vw
     }
-    /*footer{*/
-    /*    top:300vw;*/
-    /*}*/
-    footer>div>h3{
+    footer{
+        top:200vw;
+    }
+    .gmail{
         width: fit-content;
         position: absolute;
         top: 25vw;
@@ -517,8 +571,23 @@
     }
     .call{
         position: relative;
-        top: 25vw;
+        top: 20vw;
         left: 25vw;
+    }
+
+    .activity{
+        top: 160vh;
+    }
+    .responsive{
+        top: 110vh;
+        width: 100px;
+        left: 8vw;
+    }
+    .learn{
+        top: 260vh;
+    }
+    .media{
+        top: 165vh;
     }
 }
 @media all and (max-width:320px) {
@@ -553,7 +622,7 @@
         font-size: 12px;
     }
     main>a>button{
-        top:255vw;
+        top:310vw;
         left: 40vw;
         width: 100px;
         height: 20px;
@@ -579,6 +648,25 @@
         width: 190px;
     }
 
+    .activity{
+        top: 166vh;
+    }
+    .responsive{
+        top: 120vh;
+        width: 80px;
+        height: 50px;
+        margin-bottom: 120px;
+    }
+    .desc{
+        display: none;
+    }
+    .learn{
+        top: 240vh;
+        left: 25vw;
+    }
+    .media{
+        top: 170vh;
+    }
 
 
 }
