@@ -8,18 +8,26 @@
         color: red;
         font-size: 40px;
         position: absolute;
+        top: 30vh;
         left: 0vw;
         margin: 0;
-        animation: type2 5s infinite;
+        animation: up 5s infinite;
     }
-    @keyframes type2 {
+    @keyframes up {
         from{
-            top: 35vw;
+            opacity: 100%;
+        }
+        50%{
+            opacity: 50%;
+            color: #01FE09;
+        }
 
+        70%{
+            opacity: 20%;
+            color: #0109FE;
         }
         to{
-            top: 20vw;
-            color: #01FE09;
+            opacity: 0%;
         }
     }
     #portfolio>img{
@@ -40,6 +48,11 @@
     .gmail{
         position: absolute;
         left: 37vw;
+    }
+}
+@media all  and (max-width:1000px)  {
+    .name{
+        font-size: 35px;
     }
 }
 @media all  and (max-width:768px)  {
@@ -98,6 +111,103 @@
         left: 0;
         right: 0;
         margin: auto;
+    }
+    .header{
+        display: none;
+    }
+    /*.dropdown{*/
+    /*    position: relative;*/
+    /*    left: 90vw;*/
+    /*}*/
+    .dropdown-btn {
+        /*background-color: #df4356;*/
+        display: block;
+        width: 50px;
+        position: relative;
+        left: 90vw;
+        z-index: 9999;
+    }
+    .dropdown-menu{
+        width: 100px;
+        top: 8vh;
+        left: 80vw;
+    }
+    .dropdown-menu>a:hover{
+        color: red;
+        background: transparent;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+}
+@media all  and (max-width:575px){
+    .name{
+        position: relative;
+        font-size: 23px;
+        animation: up 2s infinite;
+        top: 30vh;
+        left: 0;
+    }
+    #portfolio>img{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 22vw;
+
+    }
+    @keyframes up {
+        from{
+            opacity: 100%;
+        }
+        50%{
+            opacity: 50%;
+            color: #01FE09;
+        }
+
+        70%{
+            opacity: 20%;
+            color: #0109FE;
+        }
+        to{
+            opacity: 0%;
+        }
+    }
+    .icon{
+        position: relative;
+        top: 5vh;
+        left: 8vw;
+
+    }
+
+    section>h2{
+        font-size: 50px;
+        position: relative;
+        left: 6vw;
+
+    }
+
+}
+@media all  and (max-width:575px){
+    .dropdown-btn {
+        /*background-color: #df4356;*/
+        display: block;
+        width: 50px;
+        position: relative;
+        left: 85vw;
+        z-index: 9999;
+    }
+    .dropdown-menu{
+        width: 100px;
+        top: 8vh;
+        left: 75vw;
+    }
+    .call{
+        position: absolute;
+        top: 12vh;
+        left: 33vw;
+    }
+    .gmail{
+        position: relative;
+        top: 15vh;
+        left: 25vw;
     }
 }
 @media all  and (max-width:425px){
@@ -352,9 +462,13 @@
         font-size: 5px;
     }
     .icon{
-        top: 5vh;
+        top: 3vh;
+        left: 5vw;
         width: 30px;
     }
 
+    section>h2{
+        font-size: 20px;
+    }
 
 }

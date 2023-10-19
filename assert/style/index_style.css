@@ -365,13 +365,23 @@ span{
     from{
         left: 5vw;
         top: 20vw;
+        opacity: 100%;
 
+    }
+    50%{
+        opacity: 50%;
+        color: red;
+    }
+    60%{
+        opacity: 20%;
+        color: #0109FE
     }
     to{
         rotation: 180turn;
         left: 1vw;
         top: 5vw;
         color: #01FE09;
+        opacity: 0;
     }
 }
 
