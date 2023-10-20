@@ -1,0 +1,29 @@
+body{
+    position: relative;
+    background-color: black;
+}
+div{
+    width: 100px;
+    height: 5px;
+    border: 3px solid black;
+    margin-top: 200px;
+    margin-left: 0;
+    background-color: white;
+    left: 20vw;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgb(145, 128, 227) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.light{
+    box-shadow: rgb(145, 128, 227)0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+button{
+    position: relative;
+    font-size: 30px;
+    left: 20vw;
+    top: 20px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assert/style/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+<main id="kit">
+    <section id="light_panel">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+    <section>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </section>
+    <audio  id="audio" src="assert/audio/audio.mp3/audio.mp3"  ></audio>
+</main>
+
+
+
+<script src="assert/lib/jquery.min.js"></script>
+
+<script>
+    var current_light=-1;
+    var current_direction="RIGHT";//RIGHT OR LEFT
+    var light_count=6;
+    var intervalId=null;
+
+    const updateLightPanel = () => {
+        $(".light").css("background","white")
+        if (current_direction==="RIGHT"){
+            current_light++;
+            $(".light").eq(current_light).css("background","red")
+
+            if (current_light -1>0){
+                $(".light").eq(current_light-1).css("background","red")
+                $(".light").eq(current_light-2).css("background","blue")
+            }
+
+            if (current_light===light_count-1){
+                current_direction="LEFT"
+            }
+        }else {
+            current_light--;
+            $(".light").eq(current_light).css("background","red")
+            $(".light").eq(current_light+1).css("background","red")
+            $(".light").eq(current_light+2).css("background","#350DFA")
+            if (current_light===0){
+                current_direction="RIGHT"
+            }
+        }
+    }
+
+    // #ef5350
+
+    $("#start").on("click",()=>{
+        if (intervalId == null) {
+          intervalId =  setInterval(updateLightPanel, 100);
+        }
+        $("#audio")[0].play();
+
+    });
+
+
+    $("#stop").on("click",()=>{
+        clearInterval(intervalId);
+        intervalId=null;
+        $("#audio")[0].pause();
+
+    });
+
+
+
+</script>
+</body>
+</html>
