@@ -52,6 +52,29 @@
 
 }
 
+@media all and (max-width:511px) {
+    .dark_mood{
+        left: 0;
+        width: 100px;
+        height: 60px;
+    }
+    .container{
+        top: 20vh;
+    }
+    .assingmentBtn>button{
+        position: absolute;
+        top: 250vh;
+        right: 10vw;
+    }
+    .container .card .face{
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+
+}
+
+
 @media all and (max-width:425px) {
     .assingmentBtn>button{
         position: absolute;
@@ -70,13 +93,44 @@
 
 
 @media all and (max-width:375px) {
-
-}
-
-@media all and (max-width:320px) {
+    .dark_mood{
+        left: 0;
+        width: 100px;
+        height: 60px;
+    }
+    .container{
+        top: 20vh;
+    }
+    .assingmentBtn>button{
+        position: absolute;
+        top: 470vh;
+        right: 10vw;
+    }
     .container .card .face{
         width: 200px;
         height: 200px;
         transition: 0.5s;
+    }
+}
+
+@media all and (max-width:320px) {
+    .dark_mood{
+        left: 0;
+        width: 100px;
+        height: 60px;
+    }
+    .container{
+        top: 10vh;
+    }
+    .assingmentBtn>button{
+        position: absolute;
+        top: 470vh;
+        right: 10vw;
+    }
+    .container .card .face{
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+        padding-bottom: 10vh;
     }
 }
