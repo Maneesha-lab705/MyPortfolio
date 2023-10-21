@@ -49,6 +49,12 @@
         position: absolute;
         left: 37vw;
     }
+    footer>div>nav{
+        width: fit-content;
+        position: absolute;
+        right: 44vw;
+        top: 0vh;
+    }
 }
 @media all  and (max-width:1000px)  {
     .name{
@@ -325,7 +331,7 @@
     #portfolio>img{
         position: absolute;
         top: 0vh;
-        width: 200px;
+        width: 250px;
         height: 200px;
         left: 15vw;
 

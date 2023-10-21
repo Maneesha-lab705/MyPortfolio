@@ -381,7 +381,7 @@ span{
     }
     to{
         rotation: 180turn;
-        left: 1vw;
+        /*left: 1vw;*/
         top: 5vw;
         color: #01FE09;
         opacity: 0;
@@ -417,7 +417,7 @@ footer>div>nav{
     width: fit-content;
     position: absolute;
     right: 44vw;
-    top: 0px;
+    top: 5vh;
 }
 footer>div>h3{
     width: fit-content;
