@@ -355,13 +355,15 @@ span{
         top:0;
     }
     25%{
-        top: -4rem;
+        top: -10rem;
+        color: red;
     }
     50%{
-        top: -8rem;
+        top: -14rem;
+        color: #01FE09;
     }
     72.5%{
-        top: -12.25rem;
+        top: -18rem;
     }
 }
 @keyframes type {
