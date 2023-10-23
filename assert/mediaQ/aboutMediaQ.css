@@ -318,7 +318,56 @@
     }
 
 }
+@media all and (max-width:550px) {
+    .activity{
+        top: 160vh;
+        left: 34vw;
+    }
+    .responsive{
+        top: 110vh;
+        width: 100px;
+        width: 100px;
+        left: 1px;
+    }
+    .learn{
+        position: absolute;
+        top: 230vh;
+        left: 30vw;
+        margin: 0;
+        width: fit-content;
+    }
+    /*.media{*/
+    /*    display: flex;*/
+    /*    justify-content: space-around;*/
+    /*    top: 170vh;*/
+    /*    left: 5vw;*/
 
+    /*}*/
+    .icon_section{
+        position: relative;
+        top: 30vh;
+        display: flex;
+      flex-wrap: wrap;
+        float: left;
+    }
+    .media{
+        left:10vw;
+    }
+    .dark_mood{
+        width: 100px;
+    }
+    main>a>button{
+        position: absolute;
+        top: 160vh;
+        left: 48vw;
+        z-index: 9999;
+    }
+    .gallery_section{
+        position: relative;
+        left: 10vw;
+    }
+
+}
 @media all and (max-width:575px) {
     .h{
         left: 5vw;
@@ -369,9 +418,12 @@
     }
     main>a>button{
         position: absolute;
-        top: 130vh;
+        top: 156vh;
         left: 48vw;
         z-index: 9999;
+        width: 100px;
+        height: 30px;
+        font-size: 5px;
     }
     footer{
         position: absolute;
@@ -382,7 +434,7 @@
 
     .call{
         position: relative;
-        top: 15vh;
+        top: 12vh;
         left: 35vw;
     }
     .gmail{
