@@ -76,7 +76,7 @@ body{
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(232, 15, 0.8);
+    box-shadow: 0 20px 50px rgb(70, 69, 70);
     transform: translateY(-100px);
 }
 
