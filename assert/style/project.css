@@ -9,7 +9,7 @@ body{
     top: 10vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 .content>img{
     width: 50px;

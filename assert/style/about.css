@@ -335,10 +335,16 @@ main>a>button:hover {
 /*///////////////////////activity////////////////////*/
 .activity{
     position: absolute;
-    top: 130vh;
+    top: 171vh;
     left: 40vw;
+
+}
+.gallery_section{
+    position: relative;
+    top: 39vh;
 }
 div.gallery {
+    top:150vh;
     border: 1px solid #ccc;
 }
 
@@ -394,7 +400,7 @@ div.desc {
 .learn{
     position: absolute;
     left: 40vw;
-    top: 190vh;
+    top: 215vh;
 }
 .media{
     position: relative;
@@ -409,5 +415,9 @@ div.learn_icon {
     /*border: 1px solid #ccc;*/
     width: 100px;
     height: 120px;
+}
+.icon_section{
+    position: relative;
+    top: 30vh;
 }
 

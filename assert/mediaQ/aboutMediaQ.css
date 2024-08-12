@@ -554,6 +554,10 @@
     .dark_mood{
         width: 100px;
     }
+    .assingment{
+        position: absolute;
+        bottom:0;
+    }
 
 }
 @media all and (max-width:375px) {

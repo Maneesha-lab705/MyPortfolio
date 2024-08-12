@@ -304,7 +304,7 @@
     .icon{
         position: relative;
         top: 8vh;
-        left: 13vw;
+        left: 10vw;
         display: block;
     }
     .call{
@@ -468,9 +468,10 @@
         font-size: 5px;
     }
     .icon{
-        top: 3vh;
+        top: 1vh;
         left: 5vw;
         width: 30px;
+        background-color: lime;
     }
 
     section>h2{
